@@ -6,8 +6,12 @@ THE BEST TEAM EVER
 To Do List
 - Header
 - 
+# STANDARDS 
+1. Sharing stuff
+2. Meeting weekly 
+3. Shift Left: 
 
-DIRECTIONS IN USING GITHUB 
+# DIRECTIONS IN USING GITHUB 
 1. Clone repository 
 2. Open terminal
 3. cd (change directory) into the folder

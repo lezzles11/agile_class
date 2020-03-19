@@ -1,10 +1,11 @@
 # THE BEST TEAM EVER 
 
 # #dynamix!
-Lesley: Register Page, Training Page, Upcoming Courses Page
-Oscar: Course and Coach Page
-Sneha: Home Page and Maturity Assessment
-
+<ul>
+<li>Lesley: Register Page, Training Page, Upcoming Courses Page </li>
+  <li>Oscar: Course and Coach Page</li>
+<li>Sneha: Home Page and Maturity Assessment</li>
+</ul>
 
 # Directions in using github
 1. Clone repository 

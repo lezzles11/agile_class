@@ -10,30 +10,27 @@ function Image({ link, col }) {
                      </div>)
 }
 
-function FormRow({ label }) {
-    return (
-        <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="md-form mb-0">
-                                            <input
-                                                type="text"
-                                                id={label}
-                                                name={label}
-                                                className="form-control"
-                                            />
-                                            <label for={label} className="">
-                                               {label}
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>)
-}
+
 
 export default class ContactUs extends React.Component {
 
-    render() {
-        return (
-            <div className="container">
+        constructor(props) {
+            super(props);
+            this.state = { fullName: "", password: "" };
+
+            // This binding is necessary to make `this` work in the callback
+            this.handleReset = this.handleReset.bind(this);
+        }
+        handleReset() {
+            this.setState(state => ({
+                fullName: "",
+                password: ""
+            }));
+        }
+
+        render() {
+                return (
+                        <div className="container">
                 <section className="mb-4">
                 <div className="row">
                 <div className="col-8">
@@ -56,21 +53,30 @@ export default class ContactUs extends React.Component {
 <h4> Create Your Own Account Below: </h4>
                     </div>
                     </div>
+                    <br /><br />
                     <div className="row">
                         <div className="col-md-9 mb-md-0 mb-5">
                             <form
                                 id="contact-form"
                                 name="contact-form"
-                                action="mail.php"
-                                method="POST"
                             >
-                            <FormRow label="*Full Name"/>
 
-                            <FormRow label="*Email"/>
 
-                            <FormRow label="*Password"/>
+    <div className="row">
+                                        <div className="col-3">
+                                        *Full Name: 
+                                        </div>
+                                        <div className="col-6">
+                                            <input
+                                            onChange={this.state.fullName}
+                                                type="text"
+                                                id="fullName"
+                                                name="fullName"
+                                                className="form-control"
+                                            />
+                                            </div>
+                                </div>
 
-                            <FormRow label="*Country"/>
 
                             
 
@@ -93,38 +99,25 @@ export default class ContactUs extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </form>
 
 
-
-                            <FormRow label="*Contact Number"/>
-
-                            <FormRow label="*Courses"/>
-
-
-                            <FormRow label="*Payment Info"/>
 <br />
 
                             <div className="text-center text-md-left">
-                                <a
-                                    className="btn btn-primary"
-                                    onclick="document.getElementById('contact-form').submit();"
-                                >
-                                    Reset
-                                </a>
-                                 <a
-                                    className="btn btn-primary"
-                                    onclick="document.getElementById('contact-form').submit();"
-                                >
-                                    Register
-                                </a>
+                            <button onClick={this.handleReset} className="btn btn-primary"> Reset </button>
+
+                            <button className="btn btn-primary"> Register </button>
+                           
                             </div>
 
-                            
+                    
+                            </form>        
                         </div>
                     </div>
-                </section>
-            </div>
+
+            <
+            /section> <
+            /div>
         );
     }
 }

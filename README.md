@@ -1,17 +1,13 @@
-# agileproject
+# THE BEST TEAM EVER 
 
-THE BEST TEAM EVER 
+# #dynamix!
+<ul>
+<li>Lesley: Register Page, Training Page, Upcoming Courses Page </li>
+  <li>Oscar: Course and Coach Page</li>
+<li>Sneha: Home Page and Maturity Assessment</li>
+</ul>
 
-
-To Do List
-- Header
-- 
-# STANDARDS 
-1. Sharing stuff
-2. Meeting weekly 
-3. Shift Left: 
-
-# DIRECTIONS IN USING GITHUB 
+# Directions in using github
 1. Clone repository 
 2. Open terminal
 3. cd (change directory) into the folder

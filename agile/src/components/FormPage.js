@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-	MDBContainer,
-	MDBRow,
-	MDBCol,
-	MDBBtn,
-	MDBCard,
-	MDBCardBody,
-	MDBInput
+    MDBContainer,
+    MDBRow,
+    MDBCol,
+    MDBBtn,
+    MDBCard,
+    MDBCardBody,
+    MDBInput
 } from "mdbreact";
 
+
 const FormPage = () => {
-	return (
-		<MDBContainer>
+    const [pass, setPass] = useState("")
+    const passHandler = event => {
+        setPass(event.target.value)
+    }
+    return (
+        <div> 
+    	<input type="text" onChange={setPass} />
+    	<form onSubmit={passHandler}> 
+    	{pass === 'emailLesley' && <div> <h1> hi </h1></div>} 
+    	</form>
+        <MDBContainer>
 			<MDBRow>
 				<MDBCol>
 					<MDBCard>
@@ -86,7 +96,8 @@ const FormPage = () => {
 				</MDBCol>
 			</MDBRow>
 		</MDBContainer>
-	);
+		</div>
+    );
 };
 
 export default FormPage;

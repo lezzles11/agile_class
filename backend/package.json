@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for agile project - will store contact us information",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "lesley",
+  "license": "MIT"
+}

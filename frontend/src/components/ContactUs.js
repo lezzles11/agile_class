@@ -79,6 +79,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.fullName}
                       type="text"
                       id="fullName"
+                      autocomplete="fullName"
                       name="fullName"
                       className="form-control"
                     />
@@ -93,6 +94,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.email}
                       type="text"
                       id="email"
+                      autocomplete="email"
                       name="email"
                       className="form-control"
                     />
@@ -107,6 +109,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.password}
                       type="password"
                       id="password"
+                      autocomplete="password"
                       name="password"
                       className="form-control"
                     />
@@ -121,6 +124,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.country}
                       type="text"
                       id="country"
+                      autocomplete="country"
                       name="country"
                       className="form-control"
                     />
@@ -136,6 +140,7 @@ export default class ContactUs extends React.Component {
                       type="text"
                       id="mailingAddress"
                       name="mailingAddress"
+                      autocomplete="mailingAddress"
                       rows="2"
                       className="form-control md-textarea"
                     ></textarea>
@@ -150,6 +155,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.contactNumber}
                       type="text"
                       id="contactNumber"
+                      autoComplete="contactNumber"
                       name="contactNumber"
                       className="form-control"
                     />
@@ -178,6 +184,7 @@ export default class ContactUs extends React.Component {
                       onChange={this.state.payment}
                       type="text"
                       id="payment"
+                      autoComplete="payment"
                       name="payment"
                       className="form-control"
                     />
@@ -195,7 +202,14 @@ export default class ContactUs extends React.Component {
                     Reset{" "}
                   </button>
 
-                  <button className="btn btn-primary"> Register </button>
+                  <button
+                    className="btn btn-primary"
+                    type="submit"
+                    value="Register!"
+                  >
+                    {" "}
+                    Register{" "}
+                  </button>
                 </div>
               </form>
             </div>

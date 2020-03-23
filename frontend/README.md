@@ -22,3 +22,9 @@
 12. git merge develop
 13. git add .
 14. git push 
+
+# In importing components
+1. Identify the component that you want to use 
+2. Go to your designated page
+3. import your component (import Footer from '../components/Footer') 
+4. Use it 

@@ -18,20 +18,22 @@ import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import Header from "./components/Header";
 import OnEveryPage from "./pages/OnEveryPage";
-import ContactUsPage from './pages/ContactUsPage'
+import ContactUsPage from "./pages/ContactUsPage";
+import Homepage from "./pages/Homepage";
 
 export default class App extends React.Component {
-    render() {
-        return (
-            <div className="font15">
+  render() {
+    return (
+      <div className="font15">
         <OnEveryPage />
         <br />
         <br />
         <br />
         <br />
         <br />
+        <UpcomingCoursesPage />
         <ContactUsPage />
       </div>
-        );
-    }
+    );
+  }
 }

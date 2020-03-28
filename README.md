@@ -28,3 +28,19 @@
 2. Go to your designated page
 3. import your component (import Footer from '../components/Footer') 
 4. Use it 
+
+
+# When editing code
+1. Check what branch you are on (git branch -a) 
+2. If you are on the master branch, be sure to create a new branch (git branch develop)
+3. Check out into that branch (git checkout develop) 
+4. Code your code
+5. Make sure it works, and you want to commit
+6. Double check that you are on develop, still (git branch -a) 
+7. git add .
+8. git commit -m "Describe the changes you made"
+9. git checkout master
+10. git merge develop
+11. git add .
+12. git commit 
+13. git push 

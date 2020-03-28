@@ -1,19 +1,17 @@
 import React from "react";
-import FormPage from "../components/FormPage";
+import RegisterForm from "../components/RegisterForm";
 
 export default class RegisterPage extends React.Component {
-	render() {
-		return (
-			<div className="container">
-				<div className="text-center">
-					<h1>Welcome!</h1>
-					<h3>Register Below to Create an Account</h3>
-					<br />
-					<br />
-					<br />
-					<FormPage />
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="container">
+        <div className="text-center">
+          <br />
+          <br />
+          <br />
+          <RegisterForm />
+        </div>
+      </div>
+    );
+  }
 }

@@ -1,104 +1,127 @@
 import React from "react";
 import ReactCalendar from "../components/ReactCalendar";
-import JumboCard from "../components/JumboCard";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-import ListGroup from "../components/ListGroup";
+function Calendar() {
+  return (
+    <div className="row">
+      <div className="col"></div>
+      <div className="col">
+        {" "}
+        <ReactCalendar />
+      </div>
+
+      <div className="col"></div>
+    </div>
+  );
+}
+
+function EachCourse({ courseName, location, instructorName, day, month }) {
+  return (
+    <div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+          <div className="row">
+            <div className="col-1"></div>
+            <div className="col-2">
+              <br />
+              <h2>
+                {" "}
+                {month} <br />
+                <br /> {day}
+              </h2>
+            </div>
+            <div className="col-1"></div>
+            <div className="col-5">
+              <h1 className="card-title">{courseName}</h1>
+              <h2>{location}</h2>
+
+              <h2>{instructorName}</h2>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+  );
+}
+function SearchFilter({ button }) {
+  return <div className="btn"> {button} </div>;
+}
+
+function SearchBar() {
+  return (
+    <div className="card">
+      <div className="card-body">
+        {" "}
+        <br />
+        <h4 className="card-title">Filter Events</h4>
+        <br />
+        <SearchFilter button="Course Types" />
+        <br />
+        <br />
+        <SearchFilter button="Cities" />
+        <br />
+        <br />
+        <SearchFilter button="Instructors" />
+        <br />
+        <br />
+        <SearchFilter button="Month" />
+        <br />
+        <br />
+        <div className="right"> Clear Filters</div>
+      </div>
+    </div>
+  );
+}
+
+class CourseTable extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div className="container">
+        <div className="ctr header">
+          <br />
+        </div>
+        <Calendar />
+
+        <div className="row">
+          <div className="col-3">
+            <br />
+            <br />
+            <SearchBar />
+          </div>
+          <div className="col-9">
+            <EachCourse
+              courseName="Agile"
+              month="Dec"
+              day="11"
+              location="Boston"
+              instructorName="Raj"
+            />
+            <EachCourse
+              courseName="Agile"
+              month="Dec"
+              day="11"
+              location="Boston"
+              instructorName="Raj"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 export default class UpcomingCoursesPage extends React.Component {
-	render() {
-		return (
-			<div className="container">
-				<div className="ctr header">
-					<h1>Upcoming Courses</h1>
-				</div>
-				<div className="row">
-					<div className="row">
-						<MDBCol md="3">
-							<br />
-							<br />
-							<ListGroup /> <br />
-							<ReactCalendar />
-						</MDBCol>
-
-						<MDBCol md="9">
-							<div className="row">
-								<JumboCard
-									title="Course A"
-									subtitle="Location"
-									button1="Read More"
-									button2="Dates"
-								/>{" "}
-							</div>
-							<div className="row">
-								<JumboCard
-									title="Course B"
-									subtitle="Location"
-									button1="Read More"
-									button2="Dates"
-								/>{" "}
-							</div>
-							<div className="row">
-								{" "}
-								<JumboCard
-									title="Course B"
-									subtitle="Location"
-									button1="Read More"
-									button2="Dates"
-								/>{" "}
-							</div>
-							<div className="row"></div>
-							<div className="row"></div>
-						</MDBCol>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col">
-						{" "}
-						<JumboCard
-							title="Agile"
-							subtitle="Learn the skills to reach the next level"
-							button1="Register"
-							button2="See Past Testimonials"
-						/>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col">
-						<JumboCard
-							title="About This Course"
-							subtitle=""
-							button1="Register"
-							button2="Read More"
-						/>
-					</div>
-					<div className="col">
-						<JumboCard
-							title=""
-							subtitle=""
-							button1="Register"
-							button2="Read More"
-						/>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col">
-						<JumboCard
-							title="Meet the Instructors "
-							subtitle="Decades of Experience"
-							button1="Register"
-							button2="Read More"
-						/>
-					</div>
-					<div className="col">
-						<JumboCard
-							title=""
-							subtitle=""
-							button1="Register"
-							button2=""
-						/>
-					</div>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <CourseTable />
+      </div>
+    );
+  }
 }

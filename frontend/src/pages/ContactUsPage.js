@@ -1,11 +1,11 @@
-import React from 'react'
-import ContactUs from '../components/ContactUs'
+import React from "react";
+import ContactUs from "../components/ContactUs";
 export default class ContactUsPage extends React.Component {
-    render() {
-        return (
-            <div>
-				<ContactUs />
-			</div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <ContactUs />
+      </div>
+    );
+  }
 }

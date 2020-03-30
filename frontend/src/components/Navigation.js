@@ -47,6 +47,11 @@ export default function Navigation() {
                 Resources
               </Link>
             </li>
+            <li className="nav-item">
+              <button type="button" className="btn btn-fb">
+                Facebook <i className="fab fa-facebook-f"></i> Facebook{" "}
+              </button>
+            </li>
           </ul>
         </nav>
         <Switch>

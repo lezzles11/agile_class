@@ -3,6 +3,7 @@ import "./App.css";
 import "./styles/officialstyles.css";
 import Footer from "./components/Footer";
 import OnEveryPage from "./pages/OnEveryPage";
+
 export default class App extends React.Component {
   render() {
     return (

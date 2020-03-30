@@ -6,12 +6,9 @@ export default class OnEveryPage extends React.Component {
   render() {
     return (
       <div>
-        {" "}
-        <Navigation />
-        <Header />
-        <div>
-          <br />
-          <br />{" "}
+        <div className="row">
+          <Header className="navbar-expand-lg" />
+          <Navigation />
         </div>
       </div>
     );

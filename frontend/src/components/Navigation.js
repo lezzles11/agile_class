@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavbarBrand } from "mdbreact";
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+  faFacebook,
+  faTwitter,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Homepage from "../pages/Homepage";
 import ContactUsPage from "../pages/ContactUsPage";
 import CoachingPage from "../pages/CoachingPage";
@@ -16,41 +16,116 @@ import RegisterPage from "../pages/RegisterPage";
 import TrainingPage from "../pages/TrainingPage";
 import SocialButtonsPage from "./SocialButtonsPage";
 
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
+
+var FA = require("react-fontawesome");
 export default function Navigation() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(prevState => !prevState);
+
   return (
     <Router>
       <div>
-        <nav className="blue navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <nav className="light-blue navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
           <ul className=" navbar-nav mr-auto">
+            {/* TESTING  */}
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
+              <div className="light-blue">
+                <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                  <DropdownToggle caret>Dropdown</DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem header>Header</DropdownItem>
+
+                    <DropdownItem>
+                      <Link className="text-dark nav-link" to="/training">
+                        Some Action
+                      </Link>
+                    </DropdownItem>
+
+                    <DropdownItem disabled>Action (disabled)</DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem className="nav-link">
+                      {" "}
+                      <Link className="text-dark" to="/training">
+                        Some Action
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>Bar Action</DropdownItem>
+                    <DropdownItem>Quo Action</DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+              </div>
+            </li>
+
+            {/* TESTING  */}
+
+            <li className="nav-item">
+              <NavbarBrand>
+                <Link className="nav-link" to="/">
+                  LOGO
+                </Link>
+              </NavbarBrand>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/assessment">
-                Assessment
-              </Link>
+              <NavbarBrand>
+                <Link className="nav-link" to="/assessment">
+                  Assessment
+                </Link>
+              </NavbarBrand>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link" to="/training">
-                Training
-              </Link>
+              <NavbarBrand>
+                <Link className="nav-link" to="/training">
+                  Training
+                </Link>
+              </NavbarBrand>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/coaching">
-                Coaching
-              </Link>
+              <NavbarBrand>
+                <Link className="nav-link" to="/coaching">
+                  Coaching
+                </Link>
+              </NavbarBrand>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resources">
-                Resources
-              </Link>
+              <NavbarBrand>
+                <Link className="nav-link" to="/resources">
+                  Resources
+                </Link>
+              </NavbarBrand>
             </li>
             <li className="nav-item">
-              <button type="button" className="btn btn-fb">
-                Facebook <i className="fab fa-facebook-f"></i> Facebook{" "}
-              </button>
+              <NavbarBrand>
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  style={{ color: "#4968AD" }}
+                  size="2x"
+                />
+              </NavbarBrand>
+            </li>
+            <li className="nav-item">
+              <NavbarBrand>
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ color: "#0073B0" }}
+                  size="2x"
+                />
+              </NavbarBrand>
+            </li>
+            <li className="nav-item">
+              <NavbarBrand>
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  style={{ color: "#49A1EB" }}
+                  size="2x"
+                />
+              </NavbarBrand>
             </li>
           </ul>
         </nav>

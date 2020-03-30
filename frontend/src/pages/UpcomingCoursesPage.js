@@ -116,11 +116,29 @@ class CourseTable extends React.Component {
     );
   }
 }
+
+const Courses = [
+  {
+    courseName: "Agile",
+    month: "Feb",
+    day: "15",
+    location: "Taiwan",
+    instructorName: "Mr. Raj"
+  },
+  {
+    courseName: "Agile",
+    month: "Feb",
+    day: "15",
+    location: "Taiwan",
+    instructorName: "Mr. Raj"
+  }
+];
 export default class UpcomingCoursesPage extends React.Component {
   render() {
     return (
       <div>
         <CourseTable />
+        <p>1. First, click on the image you want to post on that page</p>
       </div>
     );
   }

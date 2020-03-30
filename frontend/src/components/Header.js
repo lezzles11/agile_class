@@ -6,7 +6,8 @@ import {
   MDBCarouselItem,
   MDBView,
   MDBMask,
-  MDBContainer
+  MDBContainer,
+  MDBBtn
 } from "mdbreact";
 
 const style = {
@@ -37,8 +38,11 @@ const Header = () => {
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">About Us</h3>
-              <p>Who Are We? </p>
+              <p>Who we are? </p>
+              <p>What we do? </p>
+              <MDBBtn color="primary">Collaborate</MDBBtn>
             </MDBCarouselCaption>
+            
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
             <MDBView>

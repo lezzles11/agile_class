@@ -19,7 +19,9 @@ export default class UpcomingCoursesPage extends React.Component {
         <div>
           <JumbotronPage />
         </div>
-
+        <div className="ctr header">
+          <h1 className="text-center">About Us</h1>
+        </div>
         <div>
           <AboutUsPage />
         </div>

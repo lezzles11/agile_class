@@ -96,7 +96,7 @@ export default function Navigation() {
                     <DropdownItem className="nav-link">
                       {" "}
                       <Link className="text-dark" to="/training">
-                        Some Action
+                        Upcoming Courses
                       </Link>
                     </DropdownItem>
                   </DropdownMenu>
@@ -124,7 +124,9 @@ function SocialMedia() {
   return (
     <div className="col">
       <MDBBtn href="#" style={{ backgroundColor: "#039be5" }}>
-        View Courses
+        <Link className="text-dark" to="/training">
+          View Courses
+        </Link>
       </MDBBtn>
       <div className="row">
         <div className="col">

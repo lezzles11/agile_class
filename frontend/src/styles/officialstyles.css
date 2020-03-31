@@ -96,7 +96,7 @@
 
 
 :root {
-	--blue: #007bff;
+	--blue: #2a73cc;
 	--indigo: #6610f2;
 	--purple: #6f42c1;
 	--pink: #e83e8c;
@@ -20986,7 +20986,6 @@ body.scrollable {
 
 footer.page-footer {
 	bottom: 0;
-	color: #fff;
 }
 
 footer.page-footer .container-fluid {
@@ -21000,7 +20999,7 @@ footer.page-footer .footer-copyright {
 }
 
 footer.page-footer a {
-	color: #fff;
+	
 }
 
 .media .media-left {

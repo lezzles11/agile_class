@@ -1,5 +1,5 @@
 import React from "react";
-
+import COURSENAME from "./courses/COURSENAME";
 function CourseLogo() {
   const medImage = {
     width: "30%"
@@ -138,7 +138,6 @@ function FirstColumn() {
 function SecondColumn() {
   return (
     <div>
-      <h1>Second Column</h1>
       Length: <br />
       Effort: 20 hours / week
       <br />
@@ -159,8 +158,7 @@ function SecondColumn() {
 function CoursePage() {
   return (
     <div className="container">
-      <h1> Course Page </h1>
-      <Layout />
+      <COURSENAME />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function Navigation() {
     <Router>
       <div>
         <div className="row">
-          <nav className="navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
+          <nav className="white navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
             <ul className=" navbar-nav mr-auto">
               <NavbarBrand>
                 <Link className="nav-link" to="/home">
@@ -73,34 +73,36 @@ export default function Navigation() {
               </NavbarBrand>
 
               <NavbarBrand>
-                <UncontrolledDropdown
-                  nav
-                  inNavbar
-                  isOpen={dropdownOpen}
-                  toggle={toggleDropdown}
-                >
-                  <DropdownToggle
-                    style={{ backgroundColor: "#039be5" }}
-                    className="btn"
-                    caret
+                <li className="nav-item" style={{ backgroundColor: "#039be5" }}>
+                  <UncontrolledDropdown
+                    nav
+                    inNavbar
+                    isOpen={dropdownOpen}
+                    toggle={toggleDropdown}
                   >
-                    Resources
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem>
-                      <Link className="text-dark nav-link" to="/register">
-                        Register
-                      </Link>
-                    </DropdownItem>
+                    <DropdownToggle
+                      style={{ backgroundColor: "#039be5" }}
+                      className="btn"
+                      caret
+                    >
+                      Resources
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <Link className="text-dark nav-link" to="/register">
+                          Register
+                        </Link>
+                      </DropdownItem>
 
-                    <DropdownItem className="nav-link">
-                      {" "}
-                      <Link className="text-dark" to="/training">
-                        Upcoming Courses
-                      </Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                      <DropdownItem>
+                        {" "}
+                        <Link className="text-dark nav-link" to="/upcoming">
+                          Upcoming Courses
+                        </Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </li>
               </NavbarBrand>
               <SocialMedia />
             </ul>
@@ -114,6 +116,11 @@ export default function Navigation() {
         <div className="row">
           <Header />
         </div>
+        <br />
+
+        <br />
+        <br />
+        <br />
         <Routes />
       </div>
     </Router>
@@ -123,11 +130,11 @@ export default function Navigation() {
 function SocialMedia() {
   return (
     <div className="col">
-      <MDBBtn href="#" style={{ backgroundColor: "#039be5" }}>
-        <Link className="text-dark" to="/training">
-          View Courses
+      <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
+        <Link to="/training">
+          <p style={{ color: "white" }}>View Courses</p>
         </Link>
-      </MDBBtn>
+      </li>
       <div className="row">
         <div className="col">
           <li className="nav-item">

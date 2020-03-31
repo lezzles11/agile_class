@@ -18,9 +18,6 @@ export default class Routes extends React.Component {
           <AssessmentPage />
         </Route>
         <Route path="/training">
-          <TrainingPage />
-        </Route>
-        <Route path="/course">
           <CoursePage />
         </Route>
         <Route path="/contactus">

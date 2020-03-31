@@ -6,9 +6,9 @@ const AboutUsPage = () => {
     <MDBContainer className="mt-5 text-center">
     <MDBRow>
         <MDBCol md="4">
-        <MDBRow><MDBBtn color="primary">Who we are</MDBBtn></MDBRow>
-        <MDBRow><MDBBtn color="primary">What we do</MDBBtn></MDBRow>
-        <MDBRow><MDBBtn color="primary">Contact us</MDBBtn></MDBRow>
+        <MDBRow><MDBBtn color="blue">Who we are</MDBBtn></MDBRow>
+        <MDBRow><MDBBtn color="blue">What we do</MDBBtn></MDBRow>
+        <MDBRow><MDBBtn color="blue">Contact us</MDBBtn></MDBRow>
         </MDBCol>
     <MDBCol>   
     <MDBJumbotron fluid>  

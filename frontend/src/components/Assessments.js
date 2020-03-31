@@ -7,28 +7,26 @@ import {
   MDBMask,
   MDBIcon,
   MDBView,
-  MDBBtn
+  MDBBtn,
+  MDBContainer,
+  MDBJumbotron,
+  MDBCardText
 } from "mdbreact";
-
+const style = {
+  height: "300px",
+  width: "100%"
+};
 const Assessments = () => {
   return (
+    <MDBContainer>
     <MDBCard className="my-5 px-5 pb-5">
       <MDBCardBody>
-        <h2 className="h1-responsive font-weight-bold text-center my-5">
-          Assessments
-        </h2>
-        <p className="text-center w-responsive mx-auto mb-5">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
         <MDBRow>
-          <MDBCol lg="5" xl="4">
-            <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
-              <img
+          <MDBCol>
+            <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4" >
+              <img style={style}
                 className="img-fluid"
-                src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg"
+                src="https://www.dropbox.com/s/z2u1fduke8su34b/Scrolling%20Image_Assessment.jpg?raw=1"
                 alt=""
               />
               <a href="#!">
@@ -36,103 +34,124 @@ const Assessments = () => {
               </a>
             </MDBView>
           </MDBCol>
-          <MDBCol lg="7" xl="8">
-            <h3 className="font-weight-bold mb-3 p-0">
-              <strong>Leadership Assessments</strong>
-            </h3>
-            <p className="dark-grey-text">
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque
-              nihil impedit quo minus id quod maxime placeat facere possimus,
-              omnis voluptas assumenda est, omnis dolor repellendus et aut
-              officiis debitis cum soluta nobis est eligendi placeat facere aut
-              rerum.
-            </p>
-            <p>
-              by{" "}
-              <a href="#!" className="font-weight-bold">
-                Dynamics
-              </a>
-              , Spring 2019
-            </p>
-            <MDBBtn color="primary" size="md">
-              Read More
+          <MDBCol size='3' style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}>
+            <MDBBtn color="primary" size="md" >
+              Contact Us
             </MDBBtn>
           </MDBCol>
         </MDBRow>
-        <hr className="my-5" />
         <MDBRow>
-          <MDBCol lg="5" xl="4">
-            <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
-              <img
-                className="img-fluid"
-                src="https://mdbootstrap.com/img/Photos/Others/images/31.jpg"
-                alt=""
-              />
-              <a href="#!">
-                <MDBMask overlay="white-slight" />
-              </a>
-            </MDBView>
-          </MDBCol>
-          <MDBCol lg="7" xl="8">
-            <h3 className="font-weight-bold mb-3 p-0">
-              <strong>Organization Assessment</strong>
-            </h3>
-            <p className="dark-grey-text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident et accusamus iusto odio dignissimos et dolorum fuga.
-            </p>
-            <p>
-              by{" "}
-              <a href="#!" className="font-weight-bold">
-                Dynamics
-              </a>
-              , Spring 2019
-            </p>
-            <MDBBtn color="primary" size="md">
-              Read More
-            </MDBBtn>
-          </MDBCol>
-        </MDBRow>
-        <hr className="my-5" />
-        <MDBRow>
-          <MDBCol lg="5" xl="4">
-            <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
-              <img
-                className="img-fluid"
-                src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
-                alt=""
-              />
-              <a href="#!">
-                <MDBMask overlay="white-slight" />
-              </a>
-            </MDBView>
-          </MDBCol>
-          <MDBCol lg="7" xl="8">
-            <h3 className="font-weight-bold mb-3 p-0">
-              <strong>Portfolio Assessment</strong>
-            </h3>
-            <p className="dark-grey-text">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, psam voluptatem quia consectetur.
-            </p>
-            <p>
-              by{" "}
-              <a href="#!" className="font-weight-bold">
-                Dynamics
-              </a>
-              , Spring 2019
-            </p>
-            <MDBBtn color="primary" size="md">
-              Read More
-            </MDBBtn>
-          </MDBCol>
-        </MDBRow>
+        <MDBCol>
+          <h6>Why Assessment?</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+        </MDBCol>
+      </MDBRow>
+      <MDBRow>
+        <MDBCol>
+          <h6>What are the different types of Assessment?</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+        </MDBCol>
+      </MDBRow>
+      <MDBRow>
+        <MDBCol>
+          <ul>
+          <li>
+          <h6>Leadership Assessment</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          <li>
+          <h6>Organization Assessment</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          <li>
+          <h6>Portfolio Assessment</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          <li>
+          <h6>Program Assessment</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          <li>
+          <h6>Team Assessment</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          <li>
+          <h6>Individual role/talent</h6>
+          <MDBJumbotron style={{ padding: 0 }}>
+            <MDBCol className="text-white text-center py-2 px-2 my-2" >
+              <MDBCol className="py-2">
+                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </MDBCardText>
+                </MDBCol>
+            </MDBCol>
+          </MDBJumbotron>
+          </li>
+          </ul>
+        </MDBCol>
+      </MDBRow>
+      <MDBRow style={{
+        position: 'absolute', left: '50%', 
+        transform: 'translate(-50%, -50%)'
+    }}>
+      <MDBBtn color="blue" > Contact Us</MDBBtn>
+      </MDBRow>
       </MDBCardBody>
     </MDBCard>
+    
+    </MDBContainer>
   );
 };
 

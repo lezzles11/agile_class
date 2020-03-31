@@ -11,7 +11,7 @@ import {
 } from "mdbreact";
 
 const style = {
-  height: "600px",
+  height: "400px",
   width: "100%"
 };
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
     <div style={style}>
       <MDBCarousel
         activeItem={1}
-        length={3}
+        length={4}
         showControls={true}
         showIndicators={true}
         className="z-depth-1"
@@ -31,7 +31,7 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/b8oc7cs3m0gq49k/AdobeStock_303430811.jpeg?raw=1"
+                src="https://www.dropbox.com/s/1tjax3x4ot8wdy2/Scrolling%20Image_About%20Us.jpg?raw=1"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -49,14 +49,14 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/b8oc7cs3m0gq49k/AdobeStock_303430811.jpeg?raw=1"
+                src="https://www.dropbox.com/s/z2u1fduke8su34b/Scrolling%20Image_Assessment.jpg?raw=1"
                 alt="Second slide"
               />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Assessment</h3>
-              <p>Course </p>
+              <MDBBtn color="primary">Schedule An Assessment</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
@@ -65,14 +65,14 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/b8oc7cs3m0gq49k/AdobeStock_303430811.jpeg?raw=1"
+                src="https://www.dropbox.com/s/f73ugandms4f7zx/Scrolling%20Image_Coaching.jpg?raw=1"
                 alt="Third slide"
               />
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Course</h3>
-              <p>Third text</p>
+              <h3 className="h3-responsive">Courses</h3>
+              <MDBBtn color="primary">Schedule An Assessment</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
@@ -81,14 +81,14 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/b8oc7cs3m0gq49k/AdobeStock_303430811.jpeg?raw=1"
+                src="https://www.dropbox.com/s/z9msg55fpn5n6z5/Scrolling%20Image_Courses.jpg?raw=1"
                 alt="Fourth slide"
               />
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Coaching</h3>
-              <p>Third text</p>
+              <MDBBtn color="primary">Our Offerings</MDBBtn>
             </MDBCarouselCaption>
           </MDBCarouselItem>
         </MDBCarouselInner>

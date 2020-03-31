@@ -91,7 +91,7 @@ export default class ContactUs2 extends React.Component {
                 <div className="text-center text-md-center">
                   <button
                     onClick={this.handleReset}
-                    className="btn btn-primary"
+                    className="blue btn btn-primary"
                   >
                     {" "}
                     Sign Up{" "}

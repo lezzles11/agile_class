@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 export default class OnEveryPage extends React.Component {
   render() {
     return (
-      <div className="row">
+      <div className="">
         <Header className="navbar-expand-lg" />
         <Navigation />
       </div>

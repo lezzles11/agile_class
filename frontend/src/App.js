@@ -2,13 +2,13 @@ import React from "react";
 import "./App.css";
 import "./styles/officialstyles.css";
 import Footer from "./components/Footer";
-import OnEveryPage from "./pages/OnEveryPage";
+import Navigation from "./components/Navigation";
 
 export default class App extends React.Component {
   render() {
     return (
       <div className="font15">
-        <OnEveryPage />
+        <Navigation />
         <br />
         <Footer />
       </div>

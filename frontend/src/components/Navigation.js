@@ -32,7 +32,8 @@ export default function Navigation() {
           <nav className="white navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
             <ul className=" navbar-nav mr-auto">
               <NavbarBrand>
-                <Link className="nav-link" to="/home">
+                {" "}
+                <Link className="nav-link" to="/">
                   <img
                     width="200 px"
                     src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"

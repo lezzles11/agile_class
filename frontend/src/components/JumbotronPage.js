@@ -1,5 +1,16 @@
 import React from "react";
-import { MDBJumbotron, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBCardTitle, MDBCardImage, MDBCardBody, MDBCardText, MDBBtn } from "mdbreact";
+import {
+  MDBJumbotron,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBCardTitle,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardText,
+  MDBBtn
+} from "mdbreact";
 
 const JumbotronPage = () => {
   return (
@@ -17,8 +28,9 @@ const JumbotronPage = () => {
             />
             <MDBCardBody>
               <MDBCardText>
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                Looking for an Agile Maturity Assessment for your organization?
+                Our experts at Dynamix Agile can deliver an assessment for your
+                organization, regardless of your specific needs.
               </MDBCardText>
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
                 more
@@ -38,13 +50,14 @@ const JumbotronPage = () => {
             />
             <MDBCardBody>
               <MDBCardText>
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.doloremque laudantium, totam rem aperiam.
+                Our certified training courses can equip your teams with the top
+                certifications in the market. Whether you are looking for a
+                weekend training course for your entire organization, a team, or
+                for individual growth, we can deliver the training you need.
               </MDBCardText>
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
                 more
               </MDBBtn>
-              
             </MDBCardBody>
           </MDBJumbotron>
         </MDBCol>
@@ -60,19 +73,18 @@ const JumbotronPage = () => {
             />
             <MDBCardBody>
               <MDBCardText>
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                Need individualized coaching? Our coaches deliver customized
+                sessions according to your needs.
               </MDBCardText>
-              <MDBBtn href="#" class="float-right" color="indigo" rounded >
+              <MDBBtn href="#" class="float-right" color="indigo" rounded>
                 more
               </MDBBtn>
-
             </MDBCardBody>
           </MDBJumbotron>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-  )
-}
+  );
+};
 
 export default JumbotronPage;

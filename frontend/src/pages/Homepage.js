@@ -3,12 +3,13 @@ import ReactCalendar from "../components/ReactCalendar";
 import JumboCard2 from "../components/JumboCard2";
 import ContactUs2 from "../components/ContactUs2";
 import AgileLogos from "../components/AgileLogos";
-import AboutUsPage from "../components/AboutUsPage";
+import AboutUs from "../components/AboutUs";
 import CourseInfo from "../components/CourseInfo";
+
 import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn } from "mdbreact";
 
 import JumbotronPage from "../components/JumbotronPage";
-import GetInspiredPage from "../components/GetInspiredPage";
+import GetInspiredPage from "../pages/GetInspiredPage";
 export default class UpcomingCoursesPage extends React.Component {
   render() {
     return (
@@ -23,7 +24,7 @@ export default class UpcomingCoursesPage extends React.Component {
           <h1 className="text-center">About Us</h1>
         </div>
         <div>
-          <AboutUsPage />
+          <AboutUs />
         </div>
 
         <div className="ctr header">

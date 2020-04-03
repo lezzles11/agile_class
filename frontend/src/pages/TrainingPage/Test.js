@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/index.scss";
-import TransactionsApp from "./components/TransactionsApp";
+import TrainingApp from "./components/TrainingApp";
 
 function Test() {
   return (
     <div className="container">
-      <TransactionsApp />
+      <TrainingApp />
     </div>
   );
 }

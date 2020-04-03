@@ -9,6 +9,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Agilist",
+    url: "/agilist",
   },
   {
     date: "6/1/20",
@@ -20,6 +21,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Government Practitioner",
+    url: "/gov",
   },
   {
     date: "6/1/20",
@@ -31,6 +33,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Product Manager",
+    url: "/productmanager",
   },
   {
     date: "6/1/20",
@@ -42,6 +45,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Scrum Master",
+    url: "/agilist",
   },
   {
     date: "6/1/20",
@@ -53,6 +57,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Advanced Scrum Master",
+    url: "/advancedscrummaster",
   },
   {
     date: "6/1/20",
@@ -64,17 +69,7 @@ const mockData = [
     type: "Certification",
     account: "SAFe®",
     role: "Program Consultant",
-  },
-  {
-    date: "6/1/20",
-    title: "Customized Scrum/Kanban Workshop",
-    image: "",
-    description:
-      "A workshop designed to help teams be equipped to use Scrum and Kanban principles in their working environments",
-    amount: 1,
-    type: "Workshop",
-    account: "SAFe®",
-    role: "Anyone",
+    url: "/programconsultant",
   },
 
   {
@@ -86,6 +81,7 @@ const mockData = [
     amount: 2,
     type: "Certification",
     account: "PMI",
+    url: "/practitioner",
   },
 ];
 

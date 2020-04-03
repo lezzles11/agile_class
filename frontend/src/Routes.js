@@ -10,11 +10,46 @@ import CoursePage from "./pages/CoursePage";
 import CoachingPage from "./pages/CoachingPage";
 import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
 import LoginPage from "./pages/LoginPage";
+import Practitioner from "./pages/courses/PMI/Practitioner";
+import AdvancedScrumMaster from "./pages/courses/Safe/AdvancedScrumMaster";
+import Agilist from "./pages/courses/Safe/Agilist";
+import Gov from "./pages/courses/Safe/Gov";
+import ProductManager from "./pages/courses/Safe/ProductManager";
+import ProgramConsultant from "./pages/courses/Safe/ProgramConsultant";
+import ScrumMaster from "./pages/courses/Safe/ScrumMaster";
 
 export default class Routes extends React.Component {
   render() {
     return (
       <Switch>
+        <Route path="/practitioner">
+          <Practitioner />
+        </Route>
+
+        <Route path="/advancedscrummaster">
+          <AdvancedScrumMaster />
+        </Route>
+
+        <Route path="/agilist">
+          <Agilist />
+        </Route>
+
+        <Route path="/gov">
+          <Gov />
+        </Route>
+
+        <Route path="/productmanager">
+          <ProductManager />
+        </Route>
+
+        <Route path="/programconsultant">
+          <ProgramConsultant />
+        </Route>
+
+        <Route path="/scrummaster">
+          <ScrumMaster />
+        </Route>
+
         <Route path="/assessment">
           <AssessmentPage />
         </Route>

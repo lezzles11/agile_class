@@ -6,7 +6,6 @@ import AssessmentPage from "./pages/AssessmentPage";
 import TrainingPage from "./pages/TrainingPage/TrainingPage";
 import RegisterPage from "./pages/RegisterPage";
 import ContactUsPage from "./pages/ContactUsPage";
-import CoursePage from "./pages/CoursePage";
 import CoachingPage from "./pages/CoachingPage";
 import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
 import LoginPage from "./pages/LoginPage";
@@ -17,11 +16,15 @@ import Gov from "./pages/courses/Safe/Gov";
 import ProductManager from "./pages/courses/Safe/ProductManager";
 import ProgramConsultant from "./pages/courses/Safe/ProgramConsultant";
 import ScrumMaster from "./pages/courses/Safe/ScrumMaster";
+import CustomizedKanban from "./pages/courses/CorporateTraining/CustomizedKanban";
 
 export default class Routes extends React.Component {
   render() {
     return (
       <Switch>
+        <Route path="/customizedkanban">
+          <CustomizedKanban />
+        </Route>
         <Route path="/pmiacp">
           <PMIACP />
         </Route>

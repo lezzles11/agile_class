@@ -55,4 +55,4 @@ class PMIACP extends Component {
   }
 }
 
-export default Practitioner;
+export default PMIACP;

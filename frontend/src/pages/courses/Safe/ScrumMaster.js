@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Template from "../components/Template";
+
 class ScrumMaster extends Component {
   render() {
     return (

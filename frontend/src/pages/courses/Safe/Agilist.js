@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import Template from "../components/Template";
 class Agilist extends Component {
   render() {
     return (

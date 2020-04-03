@@ -10,6 +10,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn } from "mdbreact";
 
 import JumbotronPage from "../components/JumbotronPage";
 import GetInspiredPage from "../pages/GetInspiredPage";
+
 export default class UpcomingCoursesPage extends React.Component {
   render() {
     return (

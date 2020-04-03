@@ -99,6 +99,12 @@ export default function Navigation() {
                         Upcoming Courses
                       </Link>
                     </DropdownItem>
+                    <DropdownItem>
+                      {" "}
+                      <Link className="text-dark nav-link" to="/login">
+                        Login
+                      </Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </li>

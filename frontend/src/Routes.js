@@ -9,7 +9,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import CoursePage from "./pages/CoursePage";
 import CoachingPage from "./pages/CoachingPage";
 import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
-
+import LoginPage from "./pages/LoginPage";
 export default class Routes extends React.Component {
   render() {
     return (
@@ -34,6 +34,9 @@ export default class Routes extends React.Component {
         </Route>
         <Route path="/register">
           <RegisterPage />
+        </Route>
+        <Route path="/login">
+          <LoginPage />
         </Route>
         <Route path="/">
           <HomePage />

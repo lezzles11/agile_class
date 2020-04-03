@@ -1,5 +1,7 @@
 import React from "react";
 import COURSENAME from "./courses/COURSENAME";
+
+import { BrowserRouter as Router, Link } from "react-router-dom";
 function CourseLogo() {
   const medImage = {
     width: "30%"
@@ -66,7 +68,11 @@ function Layout() {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <button className="btn">Register</button>
+        {" "}
+        <button className="btn">
+          {" "}
+          <Link to="/register">Register</Link>
+        </button>
       </div>
     </div>
   );
@@ -129,6 +135,7 @@ function FirstColumn() {
         <ImageAndCard />
         <br />
         <ImageAndCard />
+
         <br />
       </div>
     </div>

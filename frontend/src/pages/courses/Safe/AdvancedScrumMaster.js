@@ -5,7 +5,7 @@ class AdvancedScrumMaster extends Component {
   render() {
     return (
       <div>
-        <h1>Advanced Scrum Master</h1>
+        <Template logoimage="" title="" about="" learn="" />
       </div>
     );
   }

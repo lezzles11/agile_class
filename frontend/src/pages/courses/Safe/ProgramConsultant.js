@@ -6,7 +6,7 @@ class ProgramConsultant extends Component {
   render() {
     return (
       <div>
-        <h1>Program Consultant</h1>
+        <Template logoimage="" title="" about="" learn="" />
       </div>
     );
   }

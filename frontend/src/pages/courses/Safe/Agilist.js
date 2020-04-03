@@ -5,7 +5,7 @@ class Agilist extends Component {
   render() {
     return (
       <div>
-        <h1>Agilist</h1>
+        <Template logoimage="" title="" about="" learn="" />
       </div>
     );
   }

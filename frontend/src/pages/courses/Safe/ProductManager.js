@@ -6,7 +6,7 @@ class ProductManager extends Component {
   render() {
     return (
       <div>
-        <h1>Product manager</h1>
+        <Template logoimage="" title="" about="" learn="" />
       </div>
     );
   }

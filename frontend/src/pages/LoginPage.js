@@ -13,8 +13,10 @@ import {
 function Login() {
   return (
     <div className="container">
-      <div>
+      <div className="col"></div>
+      <div className="col justify-text-center text-center">
         <form>
+          <h1>Login</h1>
           <MDBCardBody className="mx-4 mt-4">
             <MDBInput label="User Name" group type="text" validate />
             <MDBInput label="Password" group type="password" validate />
@@ -31,6 +33,8 @@ function Login() {
           </MDBCardBody>
         </form>
       </div>
+
+      <div className="col"></div>
     </div>
   );
 }

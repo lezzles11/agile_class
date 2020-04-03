@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavbarBrand, MDBBtn } from "mdbreact";
+import {
+  NavbarBrand,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem
+} from "mdbreact";
 
 import {
   faFacebook,
@@ -23,7 +30,22 @@ import {
 } from "reactstrap";
 
 import Header from "./Header";
+const style = {
+  height: "70px",
+  width: "100%"
+};
 
+function ButtonLink({ to, text }) {
+  return (
+    <NavItem>
+      <DropdownToggle className="white" style={style}>
+        <Link className="nav-link" to={to}>
+          <h6 style={{ color: "white" }}>{text}</h6>
+        </Link>
+      </DropdownToggle>
+    </NavItem>
+  );
+}
 export default function Navigation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +55,7 @@ export default function Navigation() {
 
   return (
     <Navbar>
-      <nav className="white navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
+      <nav className="white navbar fixed-top navbar-expand-lg scrolling-navbar">
         <ul className=" navbar-nav mr-auto">
           <NavbarBrand>
             {" "}
@@ -45,67 +67,44 @@ export default function Navigation() {
               />
             </Link>
           </NavbarBrand>
-          <NavbarBrand>
-            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
-              <Link className="nav-link " to="/assessment">
-                Assessment
-              </Link>
-            </li>
-          </NavbarBrand>
-          <NavbarBrand>
-            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
-              <Link className="nav-link" to="/training">
-                Training
-              </Link>
-            </li>
-          </NavbarBrand>
 
-          <NavbarBrand>
-            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
-              <Link className="nav-link" to="/coaching">
-                Coaching
-              </Link>
-            </li>
-          </NavbarBrand>
+          <ButtonLink to="/assessment" text="Assessment" />
 
-          <NavbarBrand>
-            <li className="nav-item" style={{ backgroundColor: "#039be5" }}>
-              <UncontrolledDropdown
-                nav
-                inNavbar
-                isOpen={dropdownOpen}
-                toggle={toggleDropdown}
-              >
-                <DropdownToggle
-                  style={{ backgroundColor: "#039be5" }}
-                  className="btn"
-                  caret
-                >
-                  Resources
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>
-                    <Link className="text-dark nav-link" to="/register">
-                      Register
-                    </Link>
-                  </DropdownItem>
+          <ButtonLink to="/training" text="Training" />
 
-                  <DropdownItem>
-                    {" "}
-                    <Link className="text-dark nav-link" to="/upcoming">
-                      Upcoming Courses
-                    </Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    {" "}
-                    <Link className="text-dark nav-link" to="/login">
-                      Login
-                    </Link>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </li>
-          </NavbarBrand>
+          <ButtonLink to="/coaching" text="Coaching" />
+          <NavItem>
+            <UncontrolledDropdown
+              nav
+              inNavbar
+              isOpen={dropdownOpen}
+              toggle={toggleDropdown}
+            >
+              <DropdownToggle style={style} className="btn" caret>
+                <h6 style={{ color: "white" }}>Resources</h6>
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>
+                  <Link className="text-dark nav-link" to="/register">
+                    Register
+                  </Link>
+                </DropdownItem>
+
+                <DropdownItem>
+                  {" "}
+                  <Link className="text-dark nav-link" to="/upcoming">
+                    Upcoming Courses
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  {" "}
+                  <Link className="text-dark nav-link" to="/login">
+                    Login
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </NavItem>
           <SocialMedia />
         </ul>
       </nav>
@@ -116,15 +115,11 @@ export default function Navigation() {
 function SocialMedia() {
   return (
     <div className="col">
-      <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
-        <Link to="/training">
-          <p style={{ color: "white" }}>View Courses</p>
-        </Link>
-      </li>
+      <ButtonLink to="/training" text="View Courses" />
       <div className="row">
         <div className="col">
           <li className="nav-item">
-            <NavbarBrand>
+            <NavItem>
               <a target="_blank" href="www.twitter.com">
                 <FontAwesomeIcon
                   icon={faFacebook}
@@ -132,13 +127,13 @@ function SocialMedia() {
                   size="2x"
                 />
               </a>
-            </NavbarBrand>
+            </NavItem>
           </li>
         </div>
 
         <div className="col">
           <li className="nav-item">
-            <NavbarBrand>
+            <NavItem>
               <a href="www.linkedin.com">
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -146,13 +141,13 @@ function SocialMedia() {
                   size="2x"
                 />
               </a>
-            </NavbarBrand>
+            </NavItem>
           </li>
         </div>
 
         <div className="col">
           <li className="nav-item">
-            <NavbarBrand>
+            <NavItem>
               <a href="www.twitter.com">
                 <FontAwesomeIcon
                   icon={faTwitter}
@@ -160,7 +155,7 @@ function SocialMedia() {
                   size="2x"
                 />
               </a>
-            </NavbarBrand>
+            </NavItem>
           </li>
         </div>
       </div>

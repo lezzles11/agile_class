@@ -3,7 +3,19 @@ import FirstColumn from "./FirstColumn";
 import FirstRow from "./FirstRow";
 import SecondColumn from "./SecondColumn";
 
-function Template({ logoimage, title, about, learn }) {
+function Template({
+  logoimage,
+  title,
+  about,
+  learn,
+  point1,
+  point2,
+  point3,
+  point4,
+  point5,
+  point6,
+  other,
+}) {
   return (
     <div className="container">
       <FirstRow url={logoimage} title={title} />
@@ -14,6 +26,13 @@ function Template({ logoimage, title, about, learn }) {
           <FirstColumn
             text1={about}
             text2={learn}
+            point1={point1}
+            point2={point2}
+            point3={point3}
+            point4={point4}
+            point5={point5}
+            point6={point6}
+            other={other}
             smalltitle1="Raj Heda"
             smalltext1="Raj Heda has been teaching SAFe Agilist courses for over 20 years. He has extensive experience leading teams in Agile transformation, with successful results. Raj currently teaches at Boston University and Brandeis University in the Boston area. 
 

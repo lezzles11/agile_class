@@ -14,14 +14,11 @@ function Card({ cardtitle, cardtext }) {
 }
 
 function ImageAndCard({ url, title, text }) {
-  const bigImage = {
-    width: "100%",
-  };
   return (
     <div className="row">
       <div className="col-4">
         <br />
-        <img style={bigImage} className="float-left" src={url} />
+        <img className="img-fluid" src={url} />
       </div>
       <div className="col-8">
         <Card cardtitle={title} cardtext={text} />
@@ -31,10 +28,15 @@ function ImageAndCard({ url, title, text }) {
 }
 
 function FirstColumn({
-  title1,
+  point1,
+  point2,
+  point3,
+  point4,
+  point5,
+  point6,
   text1,
-  title2,
   text2,
+  other,
   smalltitle1,
   smalltext1,
   smalltitle2,
@@ -43,13 +45,28 @@ function FirstColumn({
   return (
     <div>
       <div>
-        <h4>About This Course</h4>
-        <Card cardtitle={title1} cardtext={text1} />
+        <h4>About This Course</h4> {text1}
+        <br />
         <br />
         <h4>What You Will Learn</h4>
-
-        <Card cardtitle={title2} cardtext={text2} />
+        {text2}
         <br />
+        <br />
+        <ul>
+          {point1 && <li>{point1}</li>}
+
+          {point2 && <li>{point2}</li>}
+
+          {point3 && <li>{point3}</li>}
+
+          {point4 && <li>{point4}</li>}
+
+          {point5 && <li>{point5}</li>}
+
+          {point6 && <li>{point6}</li>}
+        </ul>
+        <br />
+        <p> {other}</p>
         <h4>Meet The Instructors</h4>
         <br />
         <ImageAndCard

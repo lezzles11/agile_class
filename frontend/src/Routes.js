@@ -10,7 +10,7 @@ import CoursePage from "./pages/CoursePage";
 import CoachingPage from "./pages/CoachingPage";
 import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
 import LoginPage from "./pages/LoginPage";
-import Practitioner from "./pages/courses/PMI/Practitioner";
+import PMIACP from "./pages/courses/PMI/PMIACP";
 import AdvancedScrumMaster from "./pages/courses/Safe/AdvancedScrumMaster";
 import Agilist from "./pages/courses/Safe/Agilist";
 import Gov from "./pages/courses/Safe/Gov";
@@ -22,8 +22,8 @@ export default class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route path="/practitioner">
-          <Practitioner />
+        <Route path="/pmiacp">
+          <PMIACP />
         </Route>
 
         <Route path="/advancedscrummaster">

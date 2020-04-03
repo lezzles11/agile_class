@@ -3,7 +3,7 @@ import FirstColumn from "../components/FirstColumn";
 import SecondColumn from "../components/SecondColumn";
 import FirstRow from "../components/FirstRow";
 
-class Practitioner extends Component {
+class PMIACP extends Component {
   render() {
     return (
       <div className="container">

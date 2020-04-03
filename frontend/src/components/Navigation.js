@@ -13,8 +13,15 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  NavLink
 } from "reactstrap";
+
 import Header from "./Header";
 
 export default function Navigation() {
@@ -25,108 +32,84 @@ export default function Navigation() {
   const toggleDropdown = () => setDropdownOpen(prevState => !prevState);
 
   return (
-    <div>
-      <div className="row">
-        <nav className="white navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
-          <ul className=" navbar-nav mr-auto">
-            <NavbarBrand>
-              {" "}
-              <Link className="nav-link" to="/">
-                <img
-                  width="200 px"
-                  src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
-                  className="img-fluid"
-                />
+    <Navbar>
+      <nav className="white navbar navbar-dark  fixed-top navbar-expand-lg scrolling-navbar">
+        <ul className=" navbar-nav mr-auto">
+          <NavbarBrand>
+            {" "}
+            <Link className="nav-link" to="/">
+              <img
+                width="200 px"
+                src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
+                className="img-fluid"
+              />
+            </Link>
+          </NavbarBrand>
+          <NavbarBrand>
+            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
+              <Link className="nav-link " to="/assessment">
+                Assessment
               </Link>
-            </NavbarBrand>
-            <NavbarBrand>
-              <li
-                className="nav-item btn"
-                style={{ backgroundColor: "#039be5" }}
-              >
-                <Link className="nav-link " to="/assessment">
-                  Assessment
-                </Link>
-              </li>
-            </NavbarBrand>
-            <NavbarBrand>
-              <li
-                className="nav-item btn"
-                style={{ backgroundColor: "#039be5" }}
-              >
-                <Link className="nav-link" to="/training">
-                  Training
-                </Link>
-              </li>
-            </NavbarBrand>
+            </li>
+          </NavbarBrand>
+          <NavbarBrand>
+            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
+              <Link className="nav-link" to="/training">
+                Training
+              </Link>
+            </li>
+          </NavbarBrand>
 
-            <NavbarBrand>
-              <li
-                className="nav-item btn"
-                style={{ backgroundColor: "#039be5" }}
-              >
-                <Link className="nav-link" to="/coaching">
-                  Coaching
-                </Link>
-              </li>
-            </NavbarBrand>
+          <NavbarBrand>
+            <li className="nav-item btn" style={{ backgroundColor: "#039be5" }}>
+              <Link className="nav-link" to="/coaching">
+                Coaching
+              </Link>
+            </li>
+          </NavbarBrand>
 
-            <NavbarBrand>
-              <li className="nav-item" style={{ backgroundColor: "#039be5" }}>
-                <UncontrolledDropdown
-                  nav
-                  inNavbar
-                  isOpen={dropdownOpen}
-                  toggle={toggleDropdown}
+          <NavbarBrand>
+            <li className="nav-item" style={{ backgroundColor: "#039be5" }}>
+              <UncontrolledDropdown
+                nav
+                inNavbar
+                isOpen={dropdownOpen}
+                toggle={toggleDropdown}
+              >
+                <DropdownToggle
+                  style={{ backgroundColor: "#039be5" }}
+                  className="btn"
+                  caret
                 >
-                  <DropdownToggle
-                    style={{ backgroundColor: "#039be5" }}
-                    className="btn"
-                    caret
-                  >
-                    Resources
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem>
-                      <Link className="text-dark nav-link" to="/register">
-                        Register
-                      </Link>
-                    </DropdownItem>
+                  Resources
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    <Link className="text-dark nav-link" to="/register">
+                      Register
+                    </Link>
+                  </DropdownItem>
 
-                    <DropdownItem>
-                      {" "}
-                      <Link className="text-dark nav-link" to="/upcoming">
-                        Upcoming Courses
-                      </Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      <Link className="text-dark nav-link" to="/login">
-                        Login
-                      </Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </li>
-            </NavbarBrand>
-            <SocialMedia />
-          </ul>
-        </nav>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="row">
-        <Header />
-      </div>
-      <br />
-
-      <br />
-      <br />
-      <br />
-    </div>
+                  <DropdownItem>
+                    {" "}
+                    <Link className="text-dark nav-link" to="/upcoming">
+                      Upcoming Courses
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <Link className="text-dark nav-link" to="/login">
+                      Login
+                    </Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </li>
+          </NavbarBrand>
+          <SocialMedia />
+        </ul>
+      </nav>
+    </Navbar>
   );
 }
 

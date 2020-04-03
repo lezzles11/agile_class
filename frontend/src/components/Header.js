@@ -12,7 +12,7 @@ import {
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const style = {
-  height: "750px",
+  height: "100%",
   width: "100%"
 };
 const Header = () => {
@@ -30,8 +30,7 @@ const Header = () => {
             <MDBView style={style}>
               {" "}
               <img
-                style={style}
-                className="d-block w-100"
+                className="img-fluid"
                 src="https://www.dropbox.com/s/3s1n1ae2ul5r9je/header3.png?raw=1"
                 alt="First slide"
               />
@@ -46,11 +45,12 @@ const Header = () => {
               </Link>
             </MDBCarouselCaption>
           </MDBCarouselItem>
+
           <MDBCarouselItem itemId="2">
-            <MDBView>
+            <MDBView style={style}>
               <img
                 style={style}
-                className="d-block w-100"
+                className="img-fluid"
                 src="https://www.dropbox.com/s/dwc10ziv3bj7qia/Agile1.png?raw=1"
                 alt="Second slide"
               />
@@ -65,10 +65,10 @@ const Header = () => {
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId="3">
-            <MDBView>
+            <MDBView style={style}>
               <img
                 style={style}
-                className="d-block w-100"
+                className="img-fluid"
                 src="https://www.dropbox.com/s/c5t1mpn72qlodgg/Trello.png?raw=1"
                 alt="Third slide"
               />
@@ -83,10 +83,10 @@ const Header = () => {
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId="4">
-            <MDBView>
+            <MDBView style={style}>
               <img
                 style={style}
-                className="d-block w-100"
+                className="img-fluid"
                 src="https://www.dropbox.com/s/z5rfhnzc2y0jm0f/header2.png?raw=1"
                 alt="Fourth slide"
               />

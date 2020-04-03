@@ -8,8 +8,8 @@ import CourseInfo from "../components/CourseInfo";
 
 import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn } from "mdbreact";
 
-import JumbotronPage from "../components/JumbotronPage";
-import GetInspiredPage from "../pages/GetInspiredPage";
+import Services from "../components/Services";
+import GetInspired from "./GetInspired";
 
 export default class UpcomingCoursesPage extends React.Component {
   render() {
@@ -19,7 +19,7 @@ export default class UpcomingCoursesPage extends React.Component {
           <h1 className="text-center">Our Services</h1>
         </div>
         <div>
-          <JumbotronPage />
+          <Services />
         </div>
         <div className="ctr header">
           <h1 className="text-center">About Us</h1>
@@ -40,7 +40,7 @@ export default class UpcomingCoursesPage extends React.Component {
           <h1 className="text-center">Get Inspired</h1>
         </div>
         <div>
-          <GetInspiredPage />
+          <GetInspired />
           <br />
         </div>
 

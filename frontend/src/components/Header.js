@@ -9,9 +9,10 @@ import {
   MDBContainer,
   MDBBtn
 } from "mdbreact";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const style = {
-  height: "400px",
+  height: "750px",
   width: "100%"
 };
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/1tjax3x4ot8wdy2/Scrolling%20Image_About%20Us.jpg?raw=1"
+                src="https://www.dropbox.com/s/3s1n1ae2ul5r9je/header3.png?raw=1"
                 alt="First slide"
               />
               <MDBMask overlay="black-light" />
@@ -40,23 +41,26 @@ const Header = () => {
               <h3 className="h3-responsive">About Us</h3>
               <p>Who we are? </p>
               <p>What we do? </p>
-              <MDBBtn color="primary">Collaborate</MDBBtn>
+              <Link className="nav-link" to="/coaching">
+                <MDBBtn color="primary">Collaborate</MDBBtn>
+              </Link>
             </MDBCarouselCaption>
-            
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
             <MDBView>
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/z2u1fduke8su34b/Scrolling%20Image_Assessment.jpg?raw=1"
+                src="https://www.dropbox.com/s/dwc10ziv3bj7qia/Agile1.png?raw=1"
                 alt="Second slide"
               />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Assessment</h3>
-              <MDBBtn color="primary">Schedule An Assessment</MDBBtn>
+              <Link className="nav-link" to="/assessment">
+                <MDBBtn color="primary">Schedule An Assessment</MDBBtn>
+              </Link>
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
@@ -65,14 +69,16 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/f73ugandms4f7zx/Scrolling%20Image_Coaching.jpg?raw=1"
+                src="https://www.dropbox.com/s/c5t1mpn72qlodgg/Trello.png?raw=1"
                 alt="Third slide"
               />
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Courses</h3>
-              <MDBBtn color="primary">Schedule An Assessment</MDBBtn>
+              <Link className="nav-link" to="/training">
+                <MDBBtn color="primary">See Courses</MDBBtn>
+              </Link>
             </MDBCarouselCaption>
           </MDBCarouselItem>
 
@@ -81,14 +87,16 @@ const Header = () => {
               <img
                 style={style}
                 className="d-block w-100"
-                src="https://www.dropbox.com/s/z9msg55fpn5n6z5/Scrolling%20Image_Courses.jpg?raw=1"
+                src="https://www.dropbox.com/s/z5rfhnzc2y0jm0f/header2.png?raw=1"
                 alt="Fourth slide"
               />
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Coaching</h3>
-              <MDBBtn color="primary">Our Offerings</MDBBtn>
+              <Link className="nav-link" to="/coaching">
+                <MDBBtn color="primary">Our Offerings</MDBBtn>
+              </Link>
             </MDBCarouselCaption>
           </MDBCarouselItem>
         </MDBCarouselInner>

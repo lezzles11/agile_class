@@ -10,7 +10,7 @@ import moment from "moment";
 
 const allAccounts = [];
 
-mockData.forEach(data => {
+mockData.forEach((data) => {
   if (!allAccounts.includes(data.account)) allAccounts.push(data.account);
 });
 
@@ -21,7 +21,7 @@ const filtersReducerDefaultState = {
   sortBy: "date",
   startDate: moment().startOf("month"),
   endDate: moment().endOf("month"),
-  accounts: allAccounts
+  accounts: allAccounts,
 };
 
 export default function TransactionsApp() {
@@ -48,7 +48,7 @@ export default function TransactionsApp() {
     >
       <div className="transctions-container">
         <header className="transctions-header">
-          <h1 className="transctions-title">Transactions</h1>
+          <h1 className="transctions-title">Courses</h1>
         </header>
         <TransactionFilters />
         <TransactionsTable />

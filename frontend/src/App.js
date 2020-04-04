@@ -17,11 +17,6 @@ export default class App extends React.Component {
         </div>
 
         <br />
-
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <div className="container">
           <div className="row">

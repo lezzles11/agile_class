@@ -6,7 +6,7 @@ class ReleaseTrainEngineer extends Component {
     return (
       <div>
         <Template 
-        logoimage="" 
+        logoimage="https://www.dropbox.com/s/aaj37uew3lcms5d/RTE.png?raw=1" 
         title="Certified SAFe® Release Train Engineer" 
         about="An intermediate- to advanced-level course on Agile Release Trains for Agile leaders, coaches and Scrum Masters." 
         learn="This intermediate- to advanced-level three-day course provides attendees the knowledge to implement Agile Release Trains (ARTs) using the Scaled Agile Framework® (SAFe®) in a Lean-Agile enterprise.  The training is oriented towards Agile leaders, coaches, and Scrum Masters. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile Release Trains and the challenges for implementing these principles in an enterprise setting.

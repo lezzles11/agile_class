@@ -6,7 +6,7 @@ class LeanPortfolioManagement extends Component {
     return (
       <div>
         <Template 
-        logoimage="" 
+        logoimage="https://www.dropbox.com/s/g8ipley2fecp77n/LPM.png?raw=1" 
         title="Certified SAFe® Lean Portfolio Manager" 
         about="A foundational Lean-Agile and Portfolio operations course for SAFe portfolio managers." 
         learn="A Certified SAFe Lean Portfolio Manager certificate holder will be expected to show competency in all aspects of managing an Agile iterative software development environment.  From the SAFe portfolio manager's perspective, the course prepares the student to demonstrate their expertise in managing an enterprise-wide portfolio of Agile projects. Instructors draw from their own real-life industry experience to show students key SAFe techniques for establishing a portfolio vision, for performing Lean portfolio budgeting, port and for using portfolio tools like Portfolio Kanban. Students are given an opportunity to practice and apply these same skills with scenarios drawn from actual industry problems. As this is a foundational level course, participants gain an appreciation both for the power, as well as the shortcomings, of Lean portfolio management in an enterprise setting.

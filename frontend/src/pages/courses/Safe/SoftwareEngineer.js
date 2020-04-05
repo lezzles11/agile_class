@@ -6,11 +6,7 @@ class SoftwareEngineer extends Component {
     return (
       <div>
         <Template 
-<<<<<<< HEAD
-        logoimage="" 
-=======
         logoimage="https://www.dropbox.com/s/70oji7c1ok87wlz/ASE.png?raw=1" 
->>>>>>> Oscar
         title="Certified SAFe® Agile Software Engineer" 
         about="A foundational Lean-Agile and DevOps course for SAFe practitioners." 
         learn="This three-day course provides attendees with the foundational knowledge required to establish their credentials as a Certified Scaled Agile Framework® (SAFe®) Agile Software Engineer. We start with principles behind iterative software development in a SAFe environment, which include the key concepts of managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  An Agile Software Engineer must be equally knowledgeable in DevOps as well as in Lean-Agile, and our expert faculty provide a comprehensive overview.

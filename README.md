@@ -1,6 +1,8 @@
 # Dynamix :tada:
+ <div>
+ <image href="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
  
-
+</div> 
 ## Getting Started :school_satchel:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -18,8 +20,6 @@ terminal
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
-
 ```
 cd agile 
 cd frontend
@@ -29,7 +29,6 @@ npm start
 
 ## Running the tests :flashlight:
 
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 

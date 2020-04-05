@@ -45,10 +45,11 @@ npm start
 * [AGILE METHODOLOGY] 
 
 ### Sample Screenshots
-
- <img target="_blank" src="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
- <img src="https://www.dropbox.com/s/6zg33fq81cbnk4e/Screen%20Shot%202020-04-05%20at%2014.42.34.png?raw=1" />
-
+<p align="left">
+ <img width="300" height="300" target="_blank" src="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
+</p><p align="right">
+<img width="200" height="200" src="https://www.dropbox.com/s/6zg33fq81cbnk4e/Screen%20Shot%202020-04-05%20at%2014.42.34.png?raw=1" />
+</p>
 ## Any feedback? 
 
 Feel free to message / ask! 

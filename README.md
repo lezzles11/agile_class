@@ -47,7 +47,7 @@ npm start
 ### Sample Screenshots
 
  <img target="_blank" src="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
-
+ <img src="https://www.dropbox.com/s/6zg33fq81cbnk4e/Screen%20Shot%202020-04-05%20at%2014.42.34.png?raw=1" />
 
 ## Any feedback? 
 

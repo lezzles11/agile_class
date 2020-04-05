@@ -6,13 +6,13 @@ import {
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
-  MDBDropdownItem
+  MDBDropdownItem,
 } from "mdbreact";
 
 import {
   faFacebook,
   faTwitter,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -26,13 +26,13 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from "reactstrap";
 
 import Header from "./Header";
 const style = {
   height: "70px",
-  width: "100%"
+  width: "100%",
 };
 
 function ButtonLink({ to, text }) {
@@ -51,7 +51,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  const toggleDropdown = () => setDropdownOpen(prevState => !prevState);
+  const toggleDropdown = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <Navbar>
@@ -92,12 +92,6 @@ export default function Navigation() {
 
                 <DropdownItem>
                   {" "}
-                  <Link className="text-dark nav-link" to="/upcoming">
-                    Upcoming Courses
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  {" "}
                   <Link className="text-dark nav-link" to="/login">
                     Login
                   </Link>
@@ -105,6 +99,8 @@ export default function Navigation() {
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
+        </ul>
+        <ul className="navbar-nav ml-auto justify-content-end">
           <SocialMedia />
         </ul>
       </nav>
@@ -115,9 +111,11 @@ export default function Navigation() {
 function SocialMedia() {
   return (
     <div className="col">
-      <ButtonLink to="/training" text="View Courses" />
+      <ButtonLink to="/upcoming" text="Upcoming Courses" />
       <div className="row">
         <div className="col">
+          {"  "}
+          {"    "}
           <li className="nav-item">
             <NavItem>
               <a target="_blank" href="www.twitter.com">

@@ -5,9 +5,24 @@ import TransactionsTable from "./TransactionsTable";
 import TransactionsContext from "../context/transactions-context";
 import transactionsReducer from "../reducers/transactions";
 import filtersReducer from "../reducers/filters";
-import mockData from "../mock-data/mock-data";
+import mockData from "../../TrainingPage/mock-data/mock-data";
 import moment from "moment";
 
+import ReactCalendar from "./ReactCalendar";
+
+function Calendar() {
+  return (
+    <div className="row">
+      <div className="col"></div>
+      <div className="col">
+        {" "}
+        <ReactCalendar />
+      </div>
+
+      <div className="col"></div>
+    </div>
+  );
+}
 const allAccounts = [];
 
 mockData.forEach((data) => {
@@ -24,7 +39,7 @@ const filtersReducerDefaultState = {
   accounts: allAccounts,
 };
 
-export default function TrainingApp() {
+export default function UpcomingApp() {
   const [filters, filtersDispatch] = useReducer(
     filtersReducer,
     filtersReducerDefaultState
@@ -46,12 +61,26 @@ export default function TrainingApp() {
       className="transctions"
       value={{ transactions, transactionsDispatch, filters, filtersDispatch }}
     >
-      <div className="transctions-container">
-        <header className="transctions-header">
-          <h1 className="transctions-title">Courses</h1>
-        </header>
-        <TransactionFilters />
-        <TransactionsTable />
+      {" "}
+      <div className="container">
+        <div className="ctr header">
+          <br />
+        </div>
+        <Calendar />
+        <div className="transctions-container">
+          <header className="transctions-header">
+            <h1 className="transctions-title">Courses</h1>
+          </header>
+          <div className="row">
+            <div className="col-3">
+              <TransactionFilters />
+            </div>
+
+            <div className="col-9">
+              <TransactionsTable />
+            </div>
+          </div>
+        </div>
       </div>
     </TransactionsContext.Provider>
   );

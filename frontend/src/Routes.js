@@ -7,7 +7,7 @@ import TrainingPage from "./pages/TrainingPage/TrainingPage";
 import RegisterPage from "./pages/RegisterPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import CoachingPage from "./pages/CoachingPage";
-import UpcomingCoursesPage from "./pages/UpcomingCoursesPage";
+import UpcomingCoursesPage from "./pages/UpcomingPage/UpcomingCoursesPage";
 import LoginPage from "./pages/LoginPage";
 import PMIACP from "./pages/courses/PMI/PMIACP";
 import PMP from "./pages/courses/PMI/PMP";

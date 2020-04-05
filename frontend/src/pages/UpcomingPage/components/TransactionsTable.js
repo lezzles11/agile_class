@@ -7,7 +7,7 @@ export default function TransactionsTable() {
   const { transactions, filters } = useContext(TransactionsContext);
 
   return (
-    <div className="row">
+    <div>
       {selectTransactions(transactions, filters).length === 0 ? (
         <div>
           <br />
@@ -17,7 +17,7 @@ export default function TransactionsTable() {
       ) : (
         selectTransactions(transactions, filters).map((transaction) => {
           return (
-            <div className="col-6">
+            <div className="row">
               <br />
               <Card key={transactions.description} transaction={transaction} />
               <br />

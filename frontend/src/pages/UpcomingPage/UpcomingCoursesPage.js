@@ -1,5 +1,6 @@
 import React from "react";
-import ReactCalendar from "../components/ReactCalendar";
+import ReactCalendar from "./components/ReactCalendar";
+import UpcomingApp from "./components/UpcomingApp";
 
 function Calendar() {
   return (
@@ -14,7 +15,6 @@ function Calendar() {
     </div>
   );
 }
-
 function EachCourse({ courseName, location, instructorName, day, month }) {
   return (
     <div className="container">
@@ -95,49 +95,18 @@ class CourseTable extends React.Component {
             <br />
             <SearchBar />
           </div>
-          <div className="col-9">
-            <EachCourse
-              courseName="Agile"
-              month="Dec"
-              day="11"
-              location="Boston"
-              instructorName="Raj"
-            />
-            <EachCourse
-              courseName="Agile"
-              month="Dec"
-              day="11"
-              location="Boston"
-              instructorName="Raj"
-            />
-          </div>
+          <div className="col-9"></div>
         </div>
       </div>
     );
   }
 }
 
-const Courses = [
-  {
-    courseName: "Agile",
-    month: "Feb",
-    day: "15",
-    location: "Taiwan",
-    instructorName: "Mr. Raj",
-  },
-  {
-    courseName: "Agile",
-    month: "Feb",
-    day: "15",
-    location: "Taiwan",
-    instructorName: "Mr. Raj",
-  },
-];
 export default class UpcomingCoursesPage extends React.Component {
   render() {
     return (
       <div className="container">
-        <CourseTable />
+        <UpcomingApp />
       </div>
     );
   }

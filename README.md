@@ -1,6 +1,57 @@
-# THE BEST TEAM EVER 
+# Dynamix :tada:
+ 
 
-# #dynamix!
+## Getting Started :school_satchel:
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites :computer:
+
+What things you need to install the software and how to install them
+
+```
+node.js
+terminal 
+```
+
+### Installing :electric_plug:
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+cd agile 
+cd frontend
+npm install
+npm start
+```
+
+## Running the tests :flashlight:
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+
+## Deployment
+
+* [NETLIFY] - Deployment Server
+
+## Built With
+
+* [REACT] - The web framework used
+
+## Planned with 
+
+* [TRELLO]
+* [AGILE METHODOLOGY] 
+
+## Any feedback? 
+
+Feel free to message / ask! 
+
+
 <ul>
 <li>Lesley: Register Page, Training Page, Upcoming Courses Page </li>
   <li>Oscar: Course and Coach Page</li>

@@ -1,6 +1,7 @@
 # Dynamix :tada:
+dynamix.netlify.com
 
- <img target="_blank" href="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
+ <img target="_blank" src="https://www.dropbox.com/s/a59rekkfc0memlq/Screen%20Shot%202020-04-05%20at%2014.42.27.png?raw=1" /> 
 
 ## Getting Started :school_satchel:
 

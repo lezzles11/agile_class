@@ -6,8 +6,13 @@ class Practitioner extends Component {
     return (
       <div>
         <Template 
+<<<<<<< HEAD
         logoimage="" 
         title="Certified SAFe Practitioner" 
+=======
+        logoimage="https://www.dropbox.com/s/5i5jhii6qtqk3q8/SP.png?raw=1" 
+        title="Certified SAFe® Practitioner" 
+>>>>>>> Oscar
         about="An intermediate-level course for SAFe practitioners in a Lean-Agile environment." 
         learn="This two-day course provides attendees with intermediate-level information about using the Scaled Agile Framework® (SAFe®) as a team member Lean-Agile enterprise.  We first review the key concepts behind iterative software development in a SAFe environment, which include managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  We then cover the daily responsibilities of an Agile practitioner and their use of Scrum, Kanban, and Extreme Programming.
  

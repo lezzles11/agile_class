@@ -6,7 +6,11 @@ class AgileProductManager extends Component {
     return (
       <div>
         <Template 
+<<<<<<< HEAD
         logoimage="" 
+=======
+        logoimage="https://www.dropbox.com/s/x1d9lug8y784kda/APM.png?raw=1" 
+>>>>>>> Oscar
         title="Certified SAFe® Agile Product Manager" 
         about="A foundational course for the Agile Product Manager certificate" 
         learn="This foundational three-day course provides attendees the background required to achieve the Certified SAFe® Agile Product Manager certification. The training is oriented towards product managers, leaders and coaches. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile product management and the challenges for implementing these principles in an enterprise setting.

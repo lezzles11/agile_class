@@ -7,32 +7,30 @@ const TransactionFilters = () => {
   const { filters, filtersDispatch } = useContext(TransactionsContext);
 
   return (
-    <div className="card">
-      <div className="card-body">
-        <div className="filters-container">
-          <div className="filters-left">
-            <CertifyingBodyDropdown
-              className="custom-dropdown"
-              dispatch={filtersDispatch}
-            />
-            <SortDropdown
-              className="custom-dropdown"
-              dispatch={filtersDispatch}
-            />
-          </div>
-          <div className="filters-right">
-            <input
-              className="search-text-input"
-              placeholder="Search by description"
-              value={filters.searchText}
-              onChange={(e) =>
-                filtersDispatch({
-                  type: "SET_SEARCH_TEXT_FILTER",
-                  searchText: e.target.value,
-                })
-              }
-            />
-          </div>
+    <div className="container">
+      <div className="card justify-content-center">
+        <div className="card-body md-form">
+          <CertifyingBodyDropdown
+            className="custom-dropdown"
+            dispatch={filtersDispatch}
+          />{" "}
+          <br />
+          <SortDropdown
+            className="custom-dropdown"
+            dispatch={filtersDispatch}
+          />
+          <br />{" "}
+          <input
+            className="form-control"
+            placeholder="Search by description"
+            value={filters.searchText}
+            onChange={(e) =>
+              filtersDispatch({
+                type: "SET_SEARCH_TEXT_FILTER",
+                searchText: e.target.value,
+              })
+            }
+          />
         </div>
       </div>
     </div>

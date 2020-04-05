@@ -73,6 +73,8 @@ export default function UpcomingApp() {
           </header>
           <div className="row">
             <div className="col-3">
+              <br />
+              <br />
               <TransactionFilters />
             </div>
 

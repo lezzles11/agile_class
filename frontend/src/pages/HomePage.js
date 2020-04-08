@@ -12,6 +12,13 @@ import {
   MDBCol,
 } from "mdbreact";
 
+import Getinspired1 from "assets/img_Getinspired1.jpg";
+import Getinspired2 from "assets/img_Getinspired2.jpg";
+import Getinspired3 from "assets/img_Getinspired3.jpg";
+import Getinspired4 from "assets/img_Getinspired4.jpg";
+import Getinspired5 from "assets/img_Getinspired5.jpg";
+import Getinspired6 from "assets/img_Getinspired6.jpg";
+
 const GetInspired = () => {
   return (
     <MDBContainer>
@@ -28,52 +35,63 @@ const GetInspired = () => {
             <MDBCarouselItem itemId="1">
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/ax4s1mv90qqshg2/Page%203_Instructor%202.jpg?raw=1"
-                  title="Maturity Assessment"
-                  text="The Agile Maturity Assessment gave our company the
-                      knowledge we needed to improve in our industry"
+                  url={Getinspired1}
+                  // title="Maturity Assessment"
+                  text='"The Leadership Maturity Assessment gave my team leads
+                  the knowledge they needed to step up their leadership
+                  and increase agility within our teams. Thank you,
+                  Dynamix Agile!"'
                 />
               </MDBCol>
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/c1fhv8ck278cg8b/Page%203_Instructor%201.jpg?raw=1"
-                  title="Training"
-                  text="The training provided by Agile Dynamix gave me the
-                      certification I needed to grow in my field"
+                  url={Getinspired2}
+                  // title="Training"
+                  text='"After taking the CSM course from Dynamix Agile, I was
+                  able to pass the CSM exam on the first try and was
+                  promoted within six months. Many thanks to my Dynamix
+                  Agile trainers!"'
                 />
               </MDBCol>
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/745e5th2bepkvbs/Screen%20Shot%202020-03-09%20at%202.14.11%20AM.png?raw=1"
-                  title="Knowledgeable Coaches"
-                  text="Fantastic coaching! Knowledgeable coaches, inspiring, and
-                      able to meet my team’s needs!"
+                  url={Getinspired3}
+                  // title="Knowledgeable Coaches"
+                  text='"I was really struggling to grow in my career. Dynamix
+                  Agile provided me the training I needed in order to gain
+                  my PMP certification, and eventually my next promotion!"'
                 />
               </MDBCol>
             </MDBCarouselItem>
             <MDBCarouselItem itemId="2">
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/745e5th2bepkvbs/Screen%20Shot%202020-03-09%20at%202.14.11%20AM.png?raw=1"
-                  title="Knowledgeable Coaches"
-                  text="Fantastic coaching! Knowledgeable coaches, inspiring, and
-                      able to meet my team’s needs!"
+                  url={Getinspired4}
+                  // title="Knowledgeable Coaches"
+                  text='"My team had a fantastic workshop hosted by Dynamix
+                  Agile. The workshop activities were engaging, and we
+                  left feeling more connected to each other and excited
+                  for the work ahead!"'
                 />
               </MDBCol>
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/4pg8sb90nf08e62/Screen%20Shot%202020-03-09%20at%202.14.18%20AM.png?raw=1"
-                  title="Training"
-                  text="The training provided by Agile Dynamix gave me the
-                      certification I needed to grow in my field"
+                  url={Getinspired5}
+                  // title="Training"
+                  text='"As a senior developer, I needed to learn how to build
+                  projects more efficiently within my teams. The CSPO
+                  course equipped me with the agility I needed to move
+                  projects quickly and on budget."'
                 />
               </MDBCol>
               <MDBCol md="4">
                 <Card
-                  url="https://www.dropbox.com/s/zda2kr86svwz4ie/Screen%20Shot%202020-03-09%20at%202.15.12%20AM.png?raw=1"
-                  title="Maturity Assessment"
-                  text="The Agile Maturity Assessment gave our company the
-                      knowledge we needed to improve in our industry"
+                  url={Getinspired6}
+                  // title="Maturity Assessment"
+                  text='"As a manager, I wanted my team leads to learn how to
+                  use Kanban and Scrum to enhance our performance and keep
+                  users happy with constant delivery. We learned all that
+                  and more!"'
                 />
                 {/* 
                 <MDBCard className="justify-content-md-center mb-2">

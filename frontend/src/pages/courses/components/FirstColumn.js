@@ -1,4 +1,6 @@
 import React from "react";
+import Getinspired_1 from "assets/Instructor_1.jpg";
+import Getinspired_2 from "assets/Instructor_2.jpg";
 
 function Card({ cardtitle, cardtext }) {
   return (
@@ -70,13 +72,13 @@ function FirstColumn({
         <h4>Meet The Instructors</h4>
         <br />
         <ImageAndCard
-          url="https://pmcvariety.files.wordpress.com/2018/12/jake-gyllenhaal.jpg?w=1000"
+          url={Getinspired_1}
           title={smalltitle1}
           text={smalltext1}
         />
         <br />
         <ImageAndCard
-          url="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
+          url={Getinspired_2}
           title={smalltitle2}
           text={smalltext2}
         />

@@ -49,13 +49,12 @@ function Template({
             effort=""
             price="$3000"
             col2title1=""
-            col2text1="Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization. 
-"
+            col2text1='"Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization."'
             col2title2=""
-            col2text2="Raj is an excellent instructor, always willing to help and great at explaining concepts. "
-            col2text3="This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+            col2text2='"Raj is an excellent instructor, always willing to help and great at explaining concepts."'
+            col2text3='"This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"'
             col2title3=""
-            col2text4=" Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise. "
+            col2text4='"Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise."'
             col2title4=""
           />
         </div>

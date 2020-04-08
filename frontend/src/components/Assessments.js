@@ -12,6 +12,7 @@ import {
   MDBJumbotron,
   MDBCardText
 } from "mdbreact";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 const style = {
   height: "300px",
   width: "100%"
@@ -39,12 +40,12 @@ const Assessments = () => {
           justifyContent: "center",
           alignItems: "center"
         }}>
-            <MDBBtn color="primary" size="md" >
-              Contact Us
-            </MDBBtn>
+       <Link to='/contactus'><MDBBtn color="blue" > 
+     Contact Us
+      </MDBBtn></Link>
           </MDBCol>
         </MDBRow>
-        <MDBRow>
+        <MDBRow className="mt-5">
         <MDBCol>
           <h6>Why Assessment?</h6>
           <MDBJumbotron style={{ padding: 0 }}>
@@ -70,7 +71,7 @@ const Assessments = () => {
           </MDBJumbotron>
         </MDBCol>
       </MDBRow>
-      <MDBRow>
+      <MDBRow className="mb-5">
         <MDBCol>
           <ul>
           <li>
@@ -146,7 +147,9 @@ const Assessments = () => {
         position: 'absolute', left: '50%', 
         transform: 'translate(-50%, -50%)'
     }}>
-      <MDBBtn color="blue" > Contact Us</MDBBtn>
+       <Link to='/contactus'><MDBBtn color="blue" > 
+     Contact Us
+      </MDBBtn></Link>
       </MDBRow>
       </MDBCardBody>
     </MDBCard>

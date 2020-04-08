@@ -51,6 +51,11 @@ export default function TrainingApp() {
           <h1 className="transctions-title">Courses</h1>
         </header>
         <TransactionFilters />
+        <br />
+        <br /> <br />
+        <br />
+        <br />
+        <br />
         <TransactionsTable />
       </div>
     </TransactionsContext.Provider>

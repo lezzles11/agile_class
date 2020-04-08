@@ -32,18 +32,40 @@ import {
 import Header from "./Header";
 const style = {
   height: "70px",
-  width: "100%",
+  width: "200px",
+  fontSize: "15px",
 };
+
+function Dropdown() {
+  return (
+    <MDBDropdown style={style}>
+      <MDBDropdownToggle style={style} caret color="primary">
+        <h6>Resources</h6>
+      </MDBDropdownToggle>
+      <MDBDropdownMenu basic>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/register">
+            Register
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <Link className="text-dark nav-link" to="/login">
+            Login
+          </Link>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+  );
+}
 
 function ButtonLink({ to, text }) {
   return (
-    <NavItem>
-      <DropdownToggle className="white" style={style}>
-        <Link className="nav-link" to={to}>
-          <h6 style={{ color: "white" }}>{text}</h6>
-        </Link>
-      </DropdownToggle>
-    </NavItem>
+    <MDBBtn style={style} color="primary">
+      <Link className="nav-link" to={to}>
+        <h6 style={{ color: "white" }}>{text}</h6>
+      </Link>
+    </MDBBtn>
   );
 }
 export default function Navigation() {
@@ -57,47 +79,19 @@ export default function Navigation() {
     <Navbar>
       <nav className="white navbar fixed-top navbar-expand-lg scrolling-navbar">
         <ul className=" navbar-nav mr-auto">
-          <NavbarBrand>
-            {" "}
-            <Link className="nav-link" to="/">
-              <img
-                width="200 px"
-                src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
-                className="img-fluid"
-              />
-            </Link>
-          </NavbarBrand>
-
+          {" "}
+          <Link className="nav-link" to="/">
+            <img
+              width="200 px"
+              src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
+              className="img-fluid"
+            />
+          </Link>
           <ButtonLink to="/assessment" text="Assessment" />
-
           <ButtonLink to="/training" text="Training" />
-
           <ButtonLink to="/coaching" text="Coaching" />
           <NavItem>
-            <UncontrolledDropdown
-              nav
-              inNavbar
-              isOpen={dropdownOpen}
-              toggle={toggleDropdown}
-            >
-              <DropdownToggle style={style} className="btn" caret>
-                <h6 style={{ color: "white" }}>Resources</h6>
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>
-                  <Link className="text-dark nav-link" to="/register">
-                    Register
-                  </Link>
-                </DropdownItem>
-
-                <DropdownItem>
-                  {" "}
-                  <Link className="text-dark nav-link" to="/login">
-                    Login
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <Dropdown />
           </NavItem>
         </ul>
         <ul className="navbar-nav ml-auto justify-content-end">

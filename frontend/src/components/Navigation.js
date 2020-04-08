@@ -36,7 +36,43 @@ const style = {
   fontSize: "15px",
 };
 
-function Dropdown() {
+function TrainingDropdown() {
+  return (
+    <MDBDropdown style={style}>
+      <MDBDropdownToggle style={style} caret color="primary">
+        <h6>Training</h6>
+      </MDBDropdownToggle>
+      <MDBDropdownMenu basic>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Training
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Public
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Corporate
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/upcomingcourses">
+            Upcoming Courses
+          </Link>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+  );
+}
+
+function ResourcesDropdown() {
   return (
     <MDBDropdown style={style}>
       <MDBDropdownToggle style={style} caret color="primary">
@@ -88,10 +124,12 @@ export default function Navigation() {
             />
           </Link>
           <ButtonLink to="/assessment" text="Assessment" />
-          <ButtonLink to="/training" text="Training" />
+          <NavItem>
+            <TrainingDropdown />
+          </NavItem>
           <ButtonLink to="/coaching" text="Coaching" />
           <NavItem>
-            <Dropdown />
+            <ResourcesDropdown />
           </NavItem>
         </ul>
         <ul className="navbar-nav ml-auto justify-content-end">

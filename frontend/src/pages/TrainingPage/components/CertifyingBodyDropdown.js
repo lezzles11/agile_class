@@ -8,19 +8,13 @@ export default class CertifyingBodyDropdown extends React.Component {
       accounts: [
         {
           id: 0,
-          title: "SAFe®",
+          title: "SAFe®e",
           selected: true,
           key: "accounts",
         },
         {
           id: 1,
           title: "PMI",
-          selected: true,
-          key: "accounts",
-        },
-        {
-          id: 2,
-          title: "Freedom",
           selected: true,
           key: "accounts",
         },

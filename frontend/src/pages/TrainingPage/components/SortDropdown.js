@@ -14,7 +14,7 @@ export default class SortDropdown extends React.Component {
         },
         {
           id: 1,
-          title: "Amount",
+          title: "Length",
           selected: false,
           key: "sortByOptions",
         },

@@ -56,7 +56,7 @@ const mockData = [
     amount: 2,
     type: "Certification",
     account: "SAFe®",
-    role: "Advanced Scrum Master",
+    role: "Scrum Master",
     url: "/advancedscrummaster",
   },
   {
@@ -81,6 +81,8 @@ const mockData = [
     amount: 2,
     type: "Certification",
     account: "PMI",
+
+    role: "Engineer",
     url: "/pmiacp",
   },
   {
@@ -95,6 +97,8 @@ const mockData = [
     amount: 2,
     type: "Certification",
     account: "Scrum.org",
+
+    role: "Engineer",
     url: "/pspo",
   },
   {

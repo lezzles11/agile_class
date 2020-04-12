@@ -19,6 +19,13 @@ import Getinspired4 from "assets/img_Getinspired4.jpg";
 import Getinspired5 from "assets/img_Getinspired5.jpg";
 import Getinspired6 from "assets/img_Getinspired6.jpg";
 
+export default function Homepage() {
+  return (
+    <div>
+      <UpcomingCoursesPage />
+    </div>
+  );
+}
 const GetInspired = () => {
   return (
     <MDBContainer>
@@ -141,7 +148,7 @@ function Card({ url, title, text }) {
   );
 }
 
-export default class UpcomingCoursesPage extends React.Component {
+class UpcomingCoursesPage extends React.Component {
   render() {
     return (
       <div className="container">

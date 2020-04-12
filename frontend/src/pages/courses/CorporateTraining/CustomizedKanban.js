@@ -5,7 +5,7 @@ class CustomizedKanban extends Component {
     return (
       <div>
         <Template 
-        logoimage="" 
+        logoimage="https://www.dropbox.com/s/ol4ow6tafftc0qm/Image%203.png?raw=1" 
         title="Customized Kanban" 
         about="A workshop designed to help teams be equipped to use Scrum and Kanban principles in their working environments. " 
         learn="Is your team wanting to learn more about Scrum and Kanban principles in order to enhance your team and working environment? If so, these two workshops have been designed with you in mind. Choose one or both, depending on your team’s needs. 

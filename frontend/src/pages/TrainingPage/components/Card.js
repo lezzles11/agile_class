@@ -27,28 +27,15 @@ export default function Card({
   },
 }) {
   return (
-    <MDBCard border="success" style={{ maxWidth: "18rem" }}>
-      <MDBCardHeader transparent border="success">
-        {date}
-      </MDBCardHeader>
-      <div className="card-body">
-        <Link to={url}>
-          <MDBCardTitle tag="h5">{title}</MDBCardTitle>
-        </Link>
+    <div>
+      <Link to={url}>
         <div className="row">
-          <div className="col">
-            {type} for {role}
-            <div className="card-text">{description}</div>
-          </div>
           <div className="col">
             {" "}
             <img style={style} src={image} />
           </div>
         </div>
-      </div>
-      <MDBCardFooter transparent border="success">
-        Length of Course: {amount} days
-      </MDBCardFooter>
-    </MDBCard>
+      </Link>
+    </div>
   );
 }

@@ -6,13 +6,13 @@ import {
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
-  MDBDropdownItem
+  MDBDropdownItem,
 } from "mdbreact";
 
 import {
   faFacebook,
   faTwitter,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -26,24 +26,87 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from "reactstrap";
 
 import Header from "./Header";
 const style = {
   height: "70px",
-  width: "100%"
+  width: "200px",
+  fontSize: "15px",
 };
+
+function TrainingDropdown() {
+  return (
+    <MDBDropdown style={style}>
+      <MDBDropdownToggle style={style} caret color="primary">
+        <h6>Training</h6>
+      </MDBDropdownToggle>
+      <MDBDropdownMenu basic>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Training
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Public
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/training">
+            Corporate
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/upcomingcourses">
+            Upcoming Courses
+          </Link>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+  );
+}
+
+function ResourcesDropdown() {
+  return (
+    <MDBDropdown style={style}>
+      <MDBDropdownToggle style={style} caret color="primary">
+        <h6>Resources</h6>
+      </MDBDropdownToggle>
+      <MDBDropdownMenu basic>
+        <MDBDropdownItem>
+          <Link className="text-dark nav-link" to="/aboutus">
+            About Us
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          {" "}
+          <Link className="text-dark nav-link" to="/register">
+            Register
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <Link className="text-dark nav-link" to="/login">
+            Login
+          </Link>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+  );
+}
 
 function ButtonLink({ to, text }) {
   return (
-    <NavItem>
-      <DropdownToggle className="white" style={style}>
-        <Link className="nav-link" to={to}>
-          <h6 style={{ color: "white" }}>{text}</h6>
-        </Link>
-      </DropdownToggle>
-    </NavItem>
+    <MDBBtn style={style} color="primary">
+      <Link className="nav-link" to={to}>
+        <h6 style={{ color: "white" }}>{text}</h6>
+      </Link>
+    </MDBBtn>
   );
 }
 export default function Navigation() {
@@ -51,59 +114,27 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  const toggleDropdown = () => setDropdownOpen(prevState => !prevState);
+  const toggleDropdown = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <Navbar>
       <nav className="white navbar fixed-top navbar-expand-lg scrolling-navbar">
         <ul className=" navbar-nav mr-auto">
-          <NavbarBrand>
-            {" "}
-            <Link className="nav-link" to="/">
-              <img
-                width="200 px"
-                src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
-                className="img-fluid"
-              />
-            </Link>
-          </NavbarBrand>
-
+          {" "}
+          <Link className="nav-link" to="/">
+            <img
+              width="200 px"
+              src="https://www.dropbox.com/s/3ndg09kniu85klz/Logo_Agile.png?raw=1"
+              className="img-fluid"
+            />
+          </Link>
           <ButtonLink to="/assessment" text="Assessment" />
-
-          <ButtonLink to="/training" text="Training" />
-
+          <NavItem>
+            <TrainingDropdown />
+          </NavItem>
           <ButtonLink to="/coaching" text="Coaching" />
           <NavItem>
-            <UncontrolledDropdown
-              nav
-              inNavbar
-              isOpen={dropdownOpen}
-              toggle={toggleDropdown}
-            >
-              <DropdownToggle style={style} className="btn" caret>
-                <h6 style={{ color: "white" }}>Resources</h6>
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>
-                  <Link className="text-dark nav-link" to="/register">
-                    Register
-                  </Link>
-                </DropdownItem>
-
-                <DropdownItem>
-                  {" "}
-                  <Link className="text-dark nav-link" to="/upcoming">
-                    Upcoming Courses
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  {" "}
-                  <Link className="text-dark nav-link" to="/login">
-                    Login
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <ResourcesDropdown />
           </NavItem>
           <SocialMedia />
         </ul>
@@ -115,7 +146,16 @@ export default function Navigation() {
 function SocialMedia() {
   return (
     <div className="col">
-      <ButtonLink to="/training" text="View Courses" />
+      <div className="row">
+        <div className="col"></div>
+
+        <div className="col"></div>
+
+        <div className="col">
+          <Link to="/login"> Login</Link>
+        </div>
+      </div>
+      <ButtonLink to="/upcoming" text="View Courses" />
       <div className="row">
         <div className="col">
           <li className="nav-item">

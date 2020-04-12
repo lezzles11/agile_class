@@ -10,82 +10,109 @@ import {
   MDBBtn,
   MDBContainer,
   MDBJumbotron,
-  MDBCardText
+  MDBCardText,
 } from "mdbreact";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 const style = {
   height: "300px",
-  width: "100%"
+  width: "100%",
 };
 const Coaching = () => {
   return (
     <MDBContainer>
-    <MDBCard className="my-5 px-5 pb-5">
-      <MDBCardBody>
-        <MDBRow>
-          <MDBCol>
-            <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4" >
-              <img style={style}
-                className="img-fluid"
-                src="https://www.dropbox.com/s/cbj08bg5oycfki3/Screen%20Shot%202020-03-28%20at%2010.41.19%20PM.png?raw=1"
-                alt=""
-              />
-              <a href="#!">
-                <MDBMask overlay="white-slight" />
-              </a>
-            </MDBView>
-          </MDBCol>
-        </MDBRow>
-        <MDBRow className="mt-5">
-        <MDBCol>
-          <h6>Agile Transformation</h6>
-          <MDBJumbotron style={{ padding: 0 }}>
-            <MDBCol className="text-white text-center py-2 px-2 my-2" >
-              <MDBCol className="py-2">
-                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </MDBCardText>
-                </MDBCol>
+      <MDBCard className="my-5 px-5 pb-5">
+        <MDBCardBody>
+          <MDBRow>
+            <MDBCol>
+              <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
+                <img
+                  style={style}
+                  className="img-fluid"
+                  src="https://www.dropbox.com/s/cbj08bg5oycfki3/Screen%20Shot%202020-03-28%20at%2010.41.19%20PM.png?raw=1"
+                  alt=""
+                />
+                <a href="#!">
+                  <MDBMask overlay="white-slight" />
+                </a>
+              </MDBView>
             </MDBCol>
-          </MDBJumbotron>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow>
-        <MDBCol>
-          <h6>Devops Transformation</h6>
-          <MDBJumbotron style={{ padding: 0 }}>
-            <MDBCol className="text-white text-center py-2 px-2 my-2" >
-              <MDBCol className="py-2">
-                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </MDBCardText>
+          </MDBRow>
+          <MDBRow className="mt-5">
+            <MDBCol>
+              <h6>Agile Transformation</h6>
+              <MDBJumbotron style={{ padding: 0 }}>
+                <MDBCol className="text-white text-center py-2 px-2 my-2">
+                  <MDBCol className="py-2">
+                    <MDBCardText className="mx-2 mb-2">
+                      Want to introduce the power of Agile to your organization?
+                      Our coaches can work with your teams to bring them up to
+                      speed. We will define the roles and responsibilities of
+                      the various team members and stakeholders, assist with
+                      implementing Agile practices including Scrum, Kanban and
+                      Lean, and help to position your group into moving ahead on
+                      your own. With our help, you will be able to strengthen
+                      your organization and help your teams grow in
+                      connectivity, continuous development, and success.
+                    </MDBCardText>
+                  </MDBCol>
                 </MDBCol>
+              </MDBJumbotron>
             </MDBCol>
-          </MDBJumbotron>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow>
-        <MDBCol>
-          <h6>Tools Assessment &#38; Implementation</h6>
-          <MDBJumbotron style={{ padding: 0 }}>
-            <MDBCol className="text-white text-center py-2 px-2 my-2" >
-              <MDBCol className="py-2">
-                <MDBCardText className="mx-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </MDBCardText>
+          </MDBRow>
+          <MDBRow>
+            <MDBCol>
+              <h6>Devops Transformation</h6>
+              <MDBJumbotron style={{ padding: 0 }}>
+                <MDBCol className="text-white text-center py-2 px-2 my-2">
+                  <MDBCol className="py-2">
+                    <MDBCardText className="mx-2 mb-2">
+                      Combining both software development and operations, an
+                      Agile DevOps environment maximizes productivity by
+                      coordinating a shared vision. This enables your
+                      organization to cooperate on a common set of tools and
+                      practices, from planning to maintenance.
+                    </MDBCardText>
+                  </MDBCol>
                 </MDBCol>
+              </MDBJumbotron>
             </MDBCol>
-          </MDBJumbotron>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow className="mt-2" style={{
-        position: 'absolute', left: '50%', 
-        transform: 'translate(-50%, -50%)'
-    }}>
-       <Link to='/contactus'><MDBBtn color="blue" > 
-     Contact Us
-      </MDBBtn></Link>
-      </MDBRow>
-      </MDBCardBody>
-    </MDBCard>
-    
+          </MDBRow>
+          <MDBRow>
+            <MDBCol>
+              <h6>Tools Assessment &#38; Implementation</h6>
+              <MDBJumbotron style={{ padding: 0 }}>
+                <MDBCol className="text-white text-center py-2 px-2 my-2">
+                  <MDBCol className="py-2">
+                    <MDBCardText className="mx-2 mb-2">
+                      Agile is a set of principles – there are a plethora of
+                      tools available, but which ones are best for your specific
+                      needs and goals? With this coaching session, we help you
+                      assess your current toolset and your organization’s
+                      strengths and challenges, and we assemble a collection of
+                      tools specific to your requirements. Our tools assessment
+                      will leave you equipped with new tools that will enable
+                      your team or organization to improve successful delivery
+                      of products and projects.
+                    </MDBCardText>
+                  </MDBCol>
+                </MDBCol>
+              </MDBJumbotron>
+            </MDBCol>
+          </MDBRow>
+          <MDBRow
+            className="mt-2"
+            style={{
+              position: "absolute",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <Link to="/contactus">
+              <MDBBtn color="blue">Contact Us</MDBBtn>
+            </Link>
+          </MDBRow>
+        </MDBCardBody>
+      </MDBCard>
     </MDBContainer>
   );
 };

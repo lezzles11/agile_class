@@ -1,5 +1,9 @@
 import React from "react";
 import Card from "./Card";
+import Review_1 from "assets/Review_1.jpg";
+import Review_2 from "assets/Review_2.jpg";
+import Review_3 from "assets/Review_3.jpg";
+import Review_4 from "assets/Review_4.jpg";
 function ImageAndCard({ url, title, text }) {
   const bigImage = {
     width: "100%",
@@ -41,29 +45,13 @@ function SecondColumn({
       <br />
       <br />
       <h3>Reviews</h3>
-      <ImageAndCard
-        url="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
-        title={col2title1}
-        text={col2text1}
-      />
+      <ImageAndCard url={Review_1} title={col2title1} text={col2text1} />
       <br />
-      <ImageAndCard
-        url="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
-        title={col2title2}
-        text={col2text2}
-      />
+      <ImageAndCard url={Review_2} title={col2title2} text={col2text2} />
       <br />
-      <ImageAndCard
-        url="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
-        title={col2title3}
-        text={col2text3}
-      />
-      <br />{" "}
-      <ImageAndCard
-        url="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
-        title={col2title4}
-        text={col2text4}
-      />
+      <ImageAndCard url={Review_3} title={col2title1} text={col2text1} />
+      <br />
+      <ImageAndCard url={Review_4} title={col2title2} text={col2text2} />
     </div>
   );
 }

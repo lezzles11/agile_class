@@ -40,10 +40,14 @@ import CSPO from "./pages/courses/ScrumAlliance/CSPO";
 import PSD from "./pages/courses/ScrumOrg/PSD";
 import PSM from "./pages/courses/ScrumOrg/PSM";
 import PSPO from "./pages/courses/ScrumOrg/PSPO";
+import AboutUsPage from "./pages/AboutUsPage";
 export default class Routes extends React.Component {
   render() {
     return (
       <Switch>
+        <Route path="/aboutus">
+          <AboutUsPage />
+        </Route>
         <Route path="/leadingsafe">
           <LeadingSafe />
         </Route>

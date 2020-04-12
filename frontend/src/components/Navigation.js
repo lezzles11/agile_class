@@ -80,6 +80,11 @@ function ResourcesDropdown() {
       </MDBDropdownToggle>
       <MDBDropdownMenu basic>
         <MDBDropdownItem>
+          <Link className="text-dark nav-link" to="/aboutus">
+            About Us
+          </Link>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
           {" "}
           <Link className="text-dark nav-link" to="/register">
             Register

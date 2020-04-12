@@ -52,15 +52,15 @@ function AboutUsPage() {
 				</div>
 				<div className="col">
 					<Image
-						name="Kristin"
-						title="Project Manager"
+						name="Isabel"
+						title="Quality Assurance"
 						src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
 					/>
 				</div>
 				<div className="col">
 					<Image
-						name="Kristin"
-						title="Project Manager"
+						name="Lesley Cheung"
+						title="Developer"
 						src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
 					/>
 				</div>

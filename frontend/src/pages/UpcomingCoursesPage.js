@@ -1,5 +1,6 @@
 import React from "react";
 import ReactCalendar from "../components/ReactCalendar";
+import data from "../../src/upcomingCourses.json";
 
 function Calendar() {
   return (
@@ -14,10 +15,84 @@ function Calendar() {
     </div>
   );
 }
+const getCourseType = data.map((data) =>{
+  return (<div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+          
+              <h5 className="card-title">{data.course_name}</h5>
+              <br />  
+        </div>
+      </div>
+    </div>)
+});
 
-function EachCourse({ courseName, location, instructorName, day, month }) {
-  return (
-    <div className="container">
+const getAllCountries = data.map((data) =>{
+  return (<div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+          
+              <h5>{data.location}</h5>
+              <br /> 
+        </div>
+      </div>
+    </div>)
+})
+const getAllCities = data.map((data) =>{
+  return (<div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+         
+              <h5>{data.location}</h5>
+              <h5>{data.instructor}</h5>
+            
+          <br />
+        </div>
+      </div>
+    </div>)
+})
+const getAllTrainers = data.map((data) =>{
+  return (<div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+
+              <h5>{data.instructor}</h5>
+            
+          <br />
+        </div>
+      </div>
+    </div>)
+})
+const getAllPartners = data.map((data) =>{
+  return (<div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+          
+              <h5>{data.instructor}</h5>
+            
+          <br />
+        </div>
+      </div>
+    </div>)
+})
+
+const NewData = data.map((data) =>{
+  return (<div className="container">
       <br />
       <br />
       <div className="card">
@@ -27,20 +102,36 @@ function EachCourse({ courseName, location, instructorName, day, month }) {
             <div className="col-1"></div>
             <div className="col-2">
               <br />
-              <h2>
+              <h5 className="text-center">
                 {" "}
-                {month} <br />
-                <br /> {day}
-              </h2>
+                {data.dates[0].month} <br />
+                <br /> {data.dates[0].day}
+              </h5>
             </div>
             <div className="col-1"></div>
             <div className="col-5">
-              <h1 className="card-title">{courseName}</h1>
-              <h2>{location}</h2>
-
-              <h2>{instructorName}</h2>
+              <h5 className="card-title">{data.course_name}</h5>
+              <h5>{data.location}</h5>
+              <h5>{data.instructor}</h5>
             </div>
           </div>
+          <br />
+        </div>
+      </div>
+    </div>)
+})
+
+function EachCourse({ courseName, location, instructorName, day, month }) {
+  return (
+    <div className="container">
+      <br />
+      <br />
+      <div className="card">
+        <br />
+        <div className="card-body">
+            
+              <h5 className="">{courseName}</h5>
+             
           <br />
         </div>
       </div>
@@ -48,7 +139,7 @@ function EachCourse({ courseName, location, instructorName, day, month }) {
   );
 }
 function SearchFilter({ button }) {
-  return <div className="btn"> {button} </div>;
+  return <div className="btn btn-color"> {button} </div>;
 }
 
 function SearchBar() {
@@ -59,19 +150,28 @@ function SearchBar() {
         <br />
         <h4 className="card-title">Filter Events</h4>
         <br />
-        <SearchFilter button="Course Types" />
+        <SearchFilter button="All Courses" onClick={NewData}/>
         <br />
         <br />
-        <SearchFilter button="Cities" />
+        <SearchFilter button="All Course Types" onClick={getCourseType}/>
         <br />
         <br />
-        <SearchFilter button="Instructors" />
+        <SearchFilter button="Calendar" />
         <br />
         <br />
-        <SearchFilter button="Month" />
+        <SearchFilter button="All Countries" onClick={getAllCountries}/>
         <br />
         <br />
-        <div className="right"> Clear Filters</div>
+        <SearchFilter button="Cities" onClick={getAllCities}/>
+        <br />
+        <br />
+        <SearchFilter button="All Trainers" onClick={getAllTrainers}/>
+        <br />
+        <br />
+        <SearchFilter button="All Partners" onClick={getAllPartners}/>
+        <br />
+        <br />
+        <div className="right-align" onClick={NewData}> <a>Clear Filters</a></div>
       </div>
     </div>
   );
@@ -81,6 +181,7 @@ class CourseTable extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div className="container">
@@ -97,42 +198,28 @@ class CourseTable extends React.Component {
           </div>
           <div className="col-9">
             <EachCourse
-              courseName="Agile"
-              month="Dec"
-              day="11"
-              location="Boston"
-              instructorName="Raj"
+              courseName=  {NewData[0]}
             />
             <EachCourse
-              courseName="Agile"
-              month="Dec"
-              day="11"
-              location="Boston"
-              instructorName="Raj"
+              courseName={NewData[1]}
+            />
+            <EachCourse
+              courseName={NewData[2]}
+            />
+            <EachCourse
+              courseName={NewData[3]}
+            />
+            <EachCourse
+              courseName={NewData[4]}
             />
           </div>
+          
         </div>
       </div>
     );
   }
 }
 
-const Courses = [
-  {
-    courseName: "Agile",
-    month: "Feb",
-    day: "15",
-    location: "Taiwan",
-    instructorName: "Mr. Raj",
-  },
-  {
-    courseName: "Agile",
-    month: "Feb",
-    day: "15",
-    location: "Taiwan",
-    instructorName: "Mr. Raj",
-  },
-];
 export default class UpcomingCoursesPage extends React.Component {
   render() {
     return (

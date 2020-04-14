@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-color{
+  background-color: #1976d2 !important;
+  color:#fff !important;
+}
+
+.right-align{
+  float:right;
+  color:#1976d2;
+
+}

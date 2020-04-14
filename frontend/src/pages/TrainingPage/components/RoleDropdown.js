@@ -14,7 +14,31 @@ export default class RoleDropdown extends React.Component {
         },
         {
           id: 1,
-          title: "Software Engineer",
+          title: "Product Owner",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 2,
+          title: "Business Analyst",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 3,
+          title: "Business Analyst",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 4,
+          title: "Developer",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 5,
+          title: "Quality Assurance",
           selected: true,
           key: "accounts",
         },

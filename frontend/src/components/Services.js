@@ -11,6 +11,9 @@ import {
   MDBCardText,
   MDBBtn,
 } from "mdbreact";
+import OurServicesAssessment from "assets/OurServicesAssessment.png";
+import OurServicesCoaching from "assets/OurServicesCoaching.png";
+import OurServicesTraining from "assets/OurServicesTraining.png";
 
 const Services = () => {
   return (
@@ -25,16 +28,13 @@ const Services = () => {
               </h3>
             </MDBCardTitle>
             <div className="container">
-              <MDBCardImage
-                src="https://www.dropbox.com/s/22y8c0xvy7cis93/process.png?raw=1"
-                className="img-fluid"
-              />
+              <MDBCardImage src={OurServicesAssessment} className="img-fluid" />
             </div>
             <MDBCardBody>
               <MDBCardText>
                 Looking for an Agile Maturity Assessment for your organization?
                 Our experts at Dynamix Agile can deliver an assessment for your
-                organization, regardless of your specific needs.
+                organization.
               </MDBCardText>
 
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
@@ -53,17 +53,13 @@ const Services = () => {
             </MDBCardTitle>
 
             <div className="container">
-              <MDBCardImage
-                src="https://www.dropbox.com/s/rvus2q503kfz4k3/Sprints.png?raw=1"
-                className="img-fluid"
-              />
+              <MDBCardImage src={OurServicesTraining} className="img-fluid" />
             </div>
             <MDBCardBody>
               <MDBCardText>
-                Our certified training courses can equip your teams with the top
-                certifications in the market. Whether you are looking for a
-                weekend training course for your entire organization, a team, or
-                for individual growth, we can deliver the training you need.
+                Do you need to get a specific certification to help you improve
+                in your industry? Our certified training courses will prepare
+                you to pass and gain top certifications in the market.
               </MDBCardText>
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
                 <a href="/training">more</a>
@@ -80,16 +76,13 @@ const Services = () => {
               </h3>
             </MDBCardTitle>
             <div className="container">
-              <MDBCardImage
-                src="https://www.dropbox.com/s/9znvi8u6l5hvysj/agileprocess.png?raw=1"
-                className="img-fluid"
-              />
+              <MDBCardImage src={OurServicesCoaching} className="img-fluid" />
             </div>
             <MDBCardBody>
               <MDBCardText>
-                Need individualized or team coaching? Our coaches deliver
-                customized sessions according to your individual, team, or
-                company wide needs.
+                Are you in need of individualized coaching to improve your
+                skills and those of your team? Our coaches deliver customized
+                sessions to help you increase successful delivery.
               </MDBCardText>
               <MDBBtn href="#" class="float-right" color="indigo" rounded>
                 <a href="/coaching">more</a>

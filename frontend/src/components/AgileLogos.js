@@ -1,4 +1,9 @@
 import React from "react";
+
+import SAFe from "assets/SAFe.jpg";
+import scrumalliance2 from "assets/scrumalliance2.png";
+import scrum from "assets/scrum.jpg";
+
 import {
   MDBJumbotron,
   MDBBtn,
@@ -10,7 +15,7 @@ import {
   MDBCardText,
   MDBCardTitle,
   MDBView,
-  MDBMask
+  MDBMask,
 } from "mdbreact";
 
 const AgileLogos = ({ title, subtitle, button1 }) => {
@@ -20,11 +25,7 @@ const AgileLogos = ({ title, subtitle, button1 }) => {
         <MDBCol>
           <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
             <div className="card-body">
-              <img
-                className="img-fluid"
-                src="https://www.dropbox.com/s/qcawzw73pxq48bo/SAFE%20logo.png?raw=1"
-                alt=""
-              />
+              <img className="img-fluid" src={SAFe} alt="" />
               <a href="#!">
                 <MDBMask overlay="white-slight" />
               </a>
@@ -34,11 +35,7 @@ const AgileLogos = ({ title, subtitle, button1 }) => {
         <MDBCol>
           <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
             <div className="card-body">
-              <img
-                className="img-fluid"
-                src="https://www.dropbox.com/s/zlw6a9h0hvv55gq/scrumalliance.1.png?raw=1"
-                alt=""
-              />
+              <img className="img-fluid" src={scrumalliance2} alt="" />
               <a href="#!">
                 <MDBMask overlay="white-slight" />
               </a>
@@ -48,11 +45,7 @@ const AgileLogos = ({ title, subtitle, button1 }) => {
         <MDBCol>
           <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
             <div className="card-body">
-              <img
-                className="img-fluid"
-                src="https://www.dropbox.com/s/bc3y8ac5t0nw69s/scrum-org.png?raw=1"
-                alt=""
-              />
+              <img className="img-fluid" src={scrum} alt="" />
               <a href="#!">
                 <MDBMask overlay="white-slight" />
               </a>

@@ -8,13 +8,37 @@ export default class TypeDropdown extends React.Component {
       accounts: [
         {
           id: 0,
-          title: "Certification",
+          title: "Scaled Agile 5.0",
           selected: true,
           key: "accounts",
         },
         {
           id: 1,
-          title: "Course",
+          title: "Scrum.org",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 2,
+          title: "Scrum Alliance",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 3,
+          title: "Leadership",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 4,
+          title: "PMI",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 5,
+          title: "Corporate Training",
           selected: true,
           key: "accounts",
         },

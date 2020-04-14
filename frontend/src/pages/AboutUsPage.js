@@ -7,6 +7,7 @@ import Sneha from "assets/Sneha.jpg";
 import Isabel from "assets/Isabel.jpeg";
 import Lesley from "assets/Lesley.jpg";
 import Raj from "assets/Raj.jpg";
+import Oscar from "assets/Oscar.jpg";
 
 function Image({ name, title, src }) {
   return (
@@ -81,7 +82,7 @@ function AboutUsPage() {
       <div className="row">
         <br />
         <div className="col">
-          <Image name="Oscar Chen" title="Developer" src={Lesley} />
+          <Image name="Oscar Chen" title="Developer" src={Oscar} />
         </div>
         <div className="col">
           <Image name="Jieqing Liu" title="UX/UI and BA" src={Jieqing} />

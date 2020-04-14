@@ -8,13 +8,25 @@ export default class CertifyingBodyDropdown extends React.Component {
       accounts: [
         {
           id: 0,
-          title: "SAFe®e",
+          title: "SAFe®",
           selected: true,
           key: "accounts",
         },
         {
           id: 1,
           title: "PMI",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 2,
+          title: "Scrum Alliance",
+          selected: true,
+          key: "accounts",
+        },
+        {
+          id: 3,
+          title: "Scrum.org",
           selected: true,
           key: "accounts",
         },
@@ -44,7 +56,7 @@ export default class CertifyingBodyDropdown extends React.Component {
   render() {
     return (
       <Dropdown
-        title="Certifiying Body"
+        title="Course Type"
         list={this.state.accounts}
         toggleItem={this.toggleSelected}
       />

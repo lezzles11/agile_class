@@ -1,4 +1,7 @@
 import React from "react";
+
+import img_Coaching from "assets/img_Coaching.png";
+
 import {
   MDBRow,
   MDBCol,
@@ -28,7 +31,7 @@ const Coaching = () => {
                 <img
                   style={style}
                   className="img-fluid"
-                  src="https://www.dropbox.com/s/cbj08bg5oycfki3/Screen%20Shot%202020-03-28%20at%2010.41.19%20PM.png?raw=1"
+                  src={img_Coaching}
                   alt=""
                 />
                 <a href="#!">
@@ -39,7 +42,7 @@ const Coaching = () => {
           </MDBRow>
           <MDBRow className="mt-5">
             <MDBCol>
-              <h6>Agile Transformation</h6>
+              <h6 align="center">Agile Transformation</h6>
               <MDBJumbotron style={{ padding: 0 }}>
                 <MDBCol className="text-white text-center py-2 px-2 my-2">
                   <MDBCol className="py-2">
@@ -61,7 +64,7 @@ const Coaching = () => {
           </MDBRow>
           <MDBRow>
             <MDBCol>
-              <h6>Devops Transformation</h6>
+              <h6 align="center">Devops Transformation</h6>
               <MDBJumbotron style={{ padding: 0 }}>
                 <MDBCol className="text-white text-center py-2 px-2 my-2">
                   <MDBCol className="py-2">
@@ -79,7 +82,7 @@ const Coaching = () => {
           </MDBRow>
           <MDBRow>
             <MDBCol>
-              <h6>Tools Assessment &#38; Implementation</h6>
+              <h6 align="center">Tools Assessment &#38; Implementation</h6>
               <MDBJumbotron style={{ padding: 0 }}>
                 <MDBCol className="text-white text-center py-2 px-2 my-2">
                   <MDBCol className="py-2">

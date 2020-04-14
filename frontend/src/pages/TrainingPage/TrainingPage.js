@@ -55,21 +55,32 @@ function StaticTrainingPage() {
         <div className="col">
           <Dropdown
             name="Course Type"
-            d1="Option 1"
-            d2="Option 2"
-            d3="Option 3"
+            d1="Scaled Agile 5.0"
+            d2="Scrum.org"
+            d3="Scrum Alliance"
+            d4="Leadership"
+            d5="PMI"
+            d6="Corporate Training"
           />
         </div>
         <div className="col">
           <Dropdown
             name="Certifying Body"
-            d1="Option 1"
-            d2="Option 2"
-            d3="Option 3"
+            d1="Scrum Alliance"
+            d2="SAFe"
+            d3="Scrum.org"
+            d4="PMI"
           />
         </div>
         <div className="col">
-          <Dropdown name="Role" d1="Option 1" d2="Option 2" d3="Option 3" />
+          <Dropdown
+            name="Role"
+            d1="Scrum Master"
+            d2="Product Owner"
+            d3="Business Analyst"
+            d4="Developer"
+            d5="Quality Assurance"
+          />
         </div>
       </div>
       <br />

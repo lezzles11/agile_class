@@ -6,8 +6,9 @@ import {
   MDBCol,
   MDBBtn,
   MDBCardBody,
-  MDBCardText
+  MDBCardText,
 } from "mdbreact";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -15,13 +16,19 @@ const AboutUs = () => {
       <MDBRow>
         <MDBCol md="4">
           <MDBRow>
-            <MDBBtn color="blue">Who we are</MDBBtn>
+            <Link className="text-dark nav-link" to="/aboutus">
+              <MDBBtn color="blue">Who We Are</MDBBtn>
+            </Link>
           </MDBRow>
           <MDBRow>
-            <MDBBtn color="blue">What we do</MDBBtn>
+            <Link className="text-dark nav-link" to="/aboutus">
+              <MDBBtn color="blue">What We Do</MDBBtn>
+            </Link>
           </MDBRow>
           <MDBRow>
-            <MDBBtn color="blue">Contact us</MDBBtn>
+            <Link className="text-dark nav-link" to="/contactus">
+              <MDBBtn color="blue">Contact Us</MDBBtn>
+            </Link>
           </MDBRow>
         </MDBCol>
         <MDBCol>
@@ -38,7 +45,7 @@ const AboutUs = () => {
                   guidance to help you grow in the market.
                 </MDBCardText>
                 <MDBBtn href="#" color="indigo" class="float-right" rounded>
-                  more
+                  <a href="/aboutus">more</a>
                 </MDBBtn>
               </MDBCardBody>
             </MDBContainer>

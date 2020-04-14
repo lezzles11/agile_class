@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter, NavbarBrand } from "mdbreact";
 import {
   faFacebook,
   faTwitter,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -38,15 +38,15 @@ const Footer = () => {
             <h5 className="title">Related Links:</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">About Us</a>
+                <a href="/aboutus">About Us</a>
               </li>
 
               <Link to="/contactus">Contact Us</Link>
               <li className="list-unstyled">
-                <a href="#!">Become A Trainer</a>
+                <a href="/contactus">Become A Trainer</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Terms and Conditions</a>
+                <a href="/aboutus">Terms and Conditions</a>
               </li>
             </ul>
           </MDBCol>

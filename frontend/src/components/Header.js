@@ -7,13 +7,13 @@ import {
   MDBView,
   MDBMask,
   MDBContainer,
-  MDBBtn
+  MDBBtn,
 } from "mdbreact";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const style = {
   height: "100%",
-  width: "100%"
+  width: "100%",
 };
 const Header = () => {
   return (
@@ -38,8 +38,8 @@ const Header = () => {
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">About Us</h3>
-              <p>Who we are? </p>
-              <p>What we do? </p>
+              <p>Who We Are</p>
+              <p>What We Do</p>
               <Link className="nav-link" to="/coaching">
                 <MDBBtn color="primary">Collaborate</MDBBtn>
               </Link>

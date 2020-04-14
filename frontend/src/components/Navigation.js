@@ -43,12 +43,12 @@ function TrainingDropdown() {
         <h6>Training</h6>
       </MDBDropdownToggle>
       <MDBDropdownMenu basic>
-        <MDBDropdownItem>
+        {/* <MDBDropdownItem>
           {" "}
           <Link className="text-dark nav-link" to="/training">
             Training
           </Link>
-        </MDBDropdownItem>
+        </MDBDropdownItem> */}
         <MDBDropdownItem>
           {" "}
           <Link className="text-dark nav-link" to="/training">
@@ -86,15 +86,15 @@ function ResourcesDropdown() {
         </MDBDropdownItem>
         <MDBDropdownItem>
           {" "}
-          <Link className="text-dark nav-link" to="/register">
-            Register
+          <Link className="text-dark nav-link" to="/contactus">
+            Contact Us
           </Link>
         </MDBDropdownItem>
-        <MDBDropdownItem>
-          <Link className="text-dark nav-link" to="/login">
-            Login
-          </Link>
-        </MDBDropdownItem>
+        {/* <MDBDropdownItem> */}
+        {/* <Link className="text-dark nav-link" to="/login"> */}
+        {/* Login */}
+        {/* </Link> */}
+        {/* </MDBDropdownItem> */}
       </MDBDropdownMenu>
     </MDBDropdown>
   );

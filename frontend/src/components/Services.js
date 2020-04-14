@@ -9,7 +9,7 @@ import {
   MDBCardImage,
   MDBCardBody,
   MDBCardText,
-  MDBBtn
+  MDBBtn,
 } from "mdbreact";
 
 const Services = () => {
@@ -36,8 +36,9 @@ const Services = () => {
                 Our experts at Dynamix Agile can deliver an assessment for your
                 organization, regardless of your specific needs.
               </MDBCardText>
+
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
-                more
+                <a href="/assessment">more</a>
               </MDBBtn>
             </MDBCardBody>
           </MDBJumbotron>
@@ -65,7 +66,7 @@ const Services = () => {
                 for individual growth, we can deliver the training you need.
               </MDBCardText>
               <MDBBtn href="#" color="indigo" class="float-right" rounded>
-                more
+                <a href="/training">more</a>
               </MDBBtn>
             </MDBCardBody>
           </MDBJumbotron>
@@ -86,11 +87,12 @@ const Services = () => {
             </div>
             <MDBCardBody>
               <MDBCardText>
-                Need individualized coaching? Our coaches deliver customized
-                sessions according to your needs.
+                Need individualized or team coaching? Our coaches deliver
+                customized sessions according to your individual, team, or
+                company wide needs.
               </MDBCardText>
               <MDBBtn href="#" class="float-right" color="indigo" rounded>
-                more
+                <a href="/coaching">more</a>
               </MDBBtn>
             </MDBCardBody>
           </MDBJumbotron>

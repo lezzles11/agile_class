@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/HomePage";
 import AssessmentPage from "./pages/AssessmentPage";
 import TrainingPage from "./pages/TrainingPage/TrainingPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -41,6 +41,7 @@ import PSD from "./pages/courses/ScrumOrg/PSD";
 import PSM from "./pages/courses/ScrumOrg/PSM";
 import PSPO from "./pages/courses/ScrumOrg/PSPO";
 import AboutUsPage from "./pages/AboutUsPage";
+
 export default class Routes extends React.Component {
   render() {
     return (

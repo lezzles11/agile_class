@@ -201,7 +201,7 @@ class TrainingPage extends React.Component {
   render() {
     return (
       <div className="container">
-        <StaticTrainingPage />
+        <Test />
 
         <br />
         <br />

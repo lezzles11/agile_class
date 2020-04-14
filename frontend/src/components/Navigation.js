@@ -148,6 +148,15 @@ export default function Navigation() {
 function SocialMedia() {
   return (
     <div className="col">
+      <div className="row">
+        <div className="col"></div>
+
+        <div className="col"></div>
+
+        <div className="col">
+          <Link to="/login"> Login</Link>
+        </div>
+      </div>
       <ButtonLink to="/upcoming" text="View Courses" />
       <div className="row">
         <div className="col">

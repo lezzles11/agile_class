@@ -6,7 +6,7 @@ class TeamBuilding extends Component {
     return (
       <div>
         <Template 
-        logoimage=""
+        logoimage="https://www.dropbox.com/s/impvkn4vv38zuso/Image%201.png?raw=1"
         title="Team Building Workshop"
         about="A workshop designed to help teams connect and increase their effectiveness " 
         learn="Are your teams suffering from lack of cohesion and connectedness? Are you and they feeling disconnected and frustrated because they just can’t seem to work well together? If these questions describe your teams, then this team building workshop is the perfect fit for you. 

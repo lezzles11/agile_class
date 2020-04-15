@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  MDBBtn
+} from "mdbreact";
 const style = {
   height: "150px",
 };
@@ -20,7 +23,8 @@ function FirstRow({ url, title, start, location }) {
           <br />
           <h5> Boston</h5>
           <br />
-          <button className="btn">Register</button>
+          <MDBBtn color="blue">Register</MDBBtn>
+          {/* <button className="btn" color="blue">Register</button> */}
         </div>
         <div className="col-2"></div>
       </div>

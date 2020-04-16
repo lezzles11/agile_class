@@ -119,9 +119,11 @@ export default function Navigation() {
           </Link>
           
         </ul>
-        <ul className="navbar-nav ml-auto justify-content-end">
 		<div className="row"></div>
+	
+        <ul className="navbar-nav mr-auto">
 		<div className="row">
+	
 		<ButtonLink to="/assessment" text="Assessment" />
           <NavItem>
             <TrainingDropdown />
@@ -131,8 +133,12 @@ export default function Navigation() {
             <ResourcesDropdown />
           </NavItem>
 		  </div>
+		  </ul>
+		  <div>
+		  <ul className="navbar-nav mr-auto justify-content-end">
           <SocialMedia />
         </ul>
+		</div>
       </nav>
     </Navbar>
   );

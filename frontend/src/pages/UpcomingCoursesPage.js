@@ -1,8 +1,25 @@
-import React from "react";
-import ReactCalendar from "../components/ReactCalendar";
+import React, {Component}from "react";
 import data from "../../src/upcomingCourses.json";
+import Calendar from "react-calendar";
 
-function Calendar() {
+class ReactCalendar extends Component {
+  state = {
+    date: new Date()
+  };
+
+  onChange = date => this.setState({ date });
+
+  render() {
+    return (
+      <div className="container">
+        <div className="font15">
+          <Calendar onChange={this.onChange} value={this.state.date} />
+        </div>
+      </div>
+    );
+  }
+}
+function Calendar2() {
   return (
     <div className="row">
       <div className="col"></div>
@@ -188,7 +205,7 @@ class CourseTable extends React.Component {
         <div className="ctr header">
           <br />
         </div>
-        <Calendar />
+        <Calendar2 />
 
         <div className="row">
           <div className="col-3">

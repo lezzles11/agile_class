@@ -1,66 +1,56 @@
-[
-    {
-        "course_id": 1,
-        "course_name": "PMI-ACP",
-        "location": "Boston, MA",
-        "instructor": "Raj Heda",
-        "dates": [
-            {
-                "month": "May",
-                "day": "09 - 10",
-                "year": "2020"
-            }
-        ]
-    },
-    {
-        "course_id": 2,
-        "course_name": "PSM",
-        "location": "Lexington, MA",
-        "instructor": "Raj Heda",
-        "dates": [
-            {
-                "month": "Jun",
-                "day": "20",
-                "year": "2020"
-            }
-        ]
-    },
-    {
-        "course_id": 3,
-        "course_name": "Certified SAFe® Agilist",
-        "location": "Lexington, MA",
-        "instructor": "Raj Heda",
-        "dates": [
-            {
-                "month": "Jul",
-                "day": "18 - 19",
-                "year": "2020"
-            }
-        ]
-    },
-    {
-        "course_id": 4,
-        "course_name": "Certified Scrum Developer",
-        "location": "Boston, MA",
-        "instructor": "Raj Heda",
-        "dates": [
-            {
-                "month": "Aug",
-                "day": "10 - 14",
-                "year": "2020"
-            }   ]
-    },
-    {
-        "course_id": 5,
-        "course_name": "CAL1",
-        "location": "Lexington, MA",
-        "instructor": "Raj Heda",
-        "dates": [
-            {
-                "month": "Sep",
-                "day": "12 - 13",
-                "year": "2020"
-            }
-        ]
-    }
+[{
+		"course_id": 1,
+		"course_name": "PMI-ACP",
+		"location": "Boston, MA",
+		"instructor": "Raj Heda",
+		"dates": [{
+			"month": "May",
+			"day": "09 - 10",
+			"year": "2020"
+		}]
+	},
+	{
+		"course_id": 2,
+		"course_name": "PSM",
+		"location": "Lexington, MA",
+		"instructor": "Raj Heda",
+		"dates": [{
+			"month": "Jun",
+			"day": "20",
+			"year": "2020"
+		}]
+	},
+	{
+		"course_id": 3,
+		"course_name": "Certified SAFe® Agilist",
+		"location": "Lexington, MA",
+		"instructor": "Raj Heda",
+		"dates": [{
+			"month": "Jul",
+			"day": "18 - 19",
+			"year": "2020"
+		}]
+	},
+	{
+		"course_id": 4,
+		"course_name": "Certified Scrum Developer",
+		"location": "Boston, MA",
+		"instructor": "Raj Heda",
+		"dates": [{
+			"month": "Aug",
+			"day": "10 - 14",
+			"year": "2020"
+		}]
+	},
+	{
+		"course_id": 5,
+		"course_name": "CAL1",
+		"location": "Lexington, MA",
+		"instructor": "Raj Heda",
+		"dates": [{
+			"month": "Sep",
+			"day": "12 - 13",
+			"year": "2020"
+		}]
+	}
 ]

@@ -43,12 +43,6 @@ function TrainingDropdown() {
         <h6>Training</h6>
       </MDBDropdownToggle>
       <MDBDropdownMenu basic>
-        {/* <MDBDropdownItem>
-          {" "}
-          <Link className="text-dark nav-link" to="/training">
-            Training
-          </Link>
-        </MDBDropdownItem> */}
         <MDBDropdownItem>
           {" "}
           <Link className="text-dark nav-link" to="/training">
@@ -90,11 +84,6 @@ function ResourcesDropdown() {
             Contact Us
           </Link>
         </MDBDropdownItem>
-        {/* <MDBDropdownItem> */}
-        {/* <Link className="text-dark nav-link" to="/login"> */}
-        {/* Login */}
-        {/* </Link> */}
-        {/* </MDBDropdownItem> */}
       </MDBDropdownMenu>
     </MDBDropdown>
   );
@@ -128,7 +117,12 @@ export default function Navigation() {
               className="img-fluid"
             />
           </Link>
-          <ButtonLink to="/assessment" text="Assessment" />
+          
+        </ul>
+        <ul className="navbar-nav ml-auto justify-content-end">
+		<div className="row"></div>
+		<div className="row">
+		<ButtonLink to="/assessment" text="Assessment" />
           <NavItem>
             <TrainingDropdown />
           </NavItem>
@@ -136,15 +130,28 @@ export default function Navigation() {
           <NavItem>
             <ResourcesDropdown />
           </NavItem>
-        </ul>
-        <ul className="navbar-nav ml-auto justify-content-end">
+		  </div>
           <SocialMedia />
         </ul>
       </nav>
     </Navbar>
   );
 }
-
+const style2 = {
+	height: "70px",
+	width: "170px",
+	fontSize: "10px",
+	padding: "1px"
+  };
+function RoundedButton({ to, text }) {
+	return (
+	  <MDBBtn style={style2} className="btn-rounded" color="primary">
+		<Link className="nav-link" to={to}>
+		  <h6 style={{ color: "white" }}>{text}</h6>
+		</Link>
+	  </MDBBtn>
+	);
+  }
 function SocialMedia() {
   return (
     <div className="col">
@@ -157,7 +164,7 @@ function SocialMedia() {
           <Link to="/login"> Login</Link>
         </div>
       </div>
-      <ButtonLink to="/upcoming" text="View Courses" />
+      <RoundedButton to="/upcoming" text="View Courses" />
       <div className="row">
         <div className="col">
           {"  "}

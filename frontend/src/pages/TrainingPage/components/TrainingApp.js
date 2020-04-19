@@ -54,7 +54,6 @@ export default function TrainingApp() {
         <br />
         <br /> <br />
         <br />
-        <h3>Leadership</h3>
         <br />
         <br />
         <TransactionsTable />

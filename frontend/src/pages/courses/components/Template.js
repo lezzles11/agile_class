@@ -2,6 +2,9 @@ import React from "react";
 import FirstColumn from "./FirstColumn";
 import FirstRow from "./FirstRow";
 import SecondColumn from "./SecondColumn";
+import {
+  MDBBtn
+} from "mdbreact";
 
 function Template({
   logoimage,
@@ -59,6 +62,7 @@ function Template({
           />
         </div>
       </div>
+      <div className="text-center pt-5"><MDBBtn color="blue">Register</MDBBtn></div>
     </div>
   );
 }

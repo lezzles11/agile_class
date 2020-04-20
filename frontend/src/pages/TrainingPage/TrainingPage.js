@@ -1,5 +1,13 @@
 import React from "react";
 import Test from "./Test";
+import { Select } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+
+
 import {
   MDBDropdown,
   MDBDropdownToggle,
@@ -48,171 +56,297 @@ function Image({ name, title, src }) {
   );
 }
 
-function StaticTrainingPage() {
+function Leadership() {
+	return (
+		<div> 
+		<Header title="Leadership" />
+		<br />
+		<div className="row">
+		  <div className="col">
+			<Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+		  </div>
+		  <div className="col">
+			<Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+		  </div>
+		  <div className="col">
+			<Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+		  </div>
+		  <div className="col">
+			<Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+		  </div>
+		</div>
+		<br />
+		</div> 
+  
+	)
+}
+class StaticTrainingPage extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			courseType: "",
+			certifyingBody: "",
+			role: ""
+		}
+	}
+	courseTypeChange = (e) => {
+		console.log(e.target.value)
+		this.setState({
+			courseType: e.target.value
+		})
+	}
+	certifyingBodyChange = (e) => {
+		console.log(e.target.value)
+		this.setState({
+			certifyingBody: e.target.value
+		})
+	}
+	roleChange = (e) => {
+		console.log(e.target.value)
+		this.setState({
+			role: e.target.value
+		})
+	}
+	render() {
+		let type = this.state.courseType; 
+		let body = this.state.certifyingBody; 
+		let role = this.state.role; 
   return (
     <div>
       <div className="row">
         <div className="col">
-          <Dropdown
-            name="Course Type"
-            d1="Scaled Agile 5.0"
-            d2="Scrum.org"
-            d3="Scrum Alliance"
-            d4="Leadership"
-            d5="PMI"
-            d6="Corporate Training"
-          />
+		<Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          onChange={this.courseTypeChange}
+        >
+          <MenuItem value="scaled">Scaled Agile 5.0</MenuItem>
+          <MenuItem value="org">Scrum.org</MenuItem>
+          <MenuItem value="alliance">Scrum Alliance</MenuItem>
+        </Select>
+
         </div>
         <div className="col">
-          <Dropdown
-            name="Certifying Body"
-            d1="Scrum Alliance"
-            d2="SAFe"
-            d3="Scrum.org"
-            d4="PMI"
-          />
+		<Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          onChange={this.certifyingBodyChange}
+        >
+          <MenuItem value="alliance">Scrum Alliance</MenuItem>
+          <MenuItem value="safe">SAFe</MenuItem>
+		  <MenuItem value="PMI">PMI</MenuItem>
+        </Select>
         </div>
         <div className="col">
-          <Dropdown
-            name="Role"
-            d1="Scrum Master"
-            d2="Product Owner"
-            d3="Business Analyst"
-            d4="Developer"
-            d5="Quality Assurance"
-          />
+		<Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          onChange={this.roleChange}
+        >
+          <MenuItem value="leadership">Leadership</MenuItem>
+
+          <MenuItem value="corporate">Corporate Training</MenuItem>
+        </Select>
         </div>
       </div>
       <br />
+	  {(type === "" && body === "" && role === "") && <div> <Scaled /><ScrumOrg /><ScrumAlliance /><Safe /><PMI /> <Leadership /> <CorporateTraining /></div>}
+	{type === "scaled" && <Scaled />}
+	{type === "org" && <ScrumOrg />}
+	{(type === "alliance" || body === "alliance") && <ScrumAlliance />}
+
+	{body === "safe" && <Safe />}
+	{body === "PMI" && <PMI />}
+	{role === "leadership" && <Leadership />}
+	{role === "corporate" && <CorporateTraining />}
+
+
+   
 
       <br />
-      <Header title="Leadership" />
-      <br />
-      <div className="row">
-        <div className="col">
-          <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-        </div>
-        <div className="col">
-          <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-        </div>
-        <div className="col">
-          <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-        </div>
-        <div className="col">
-          <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-        </div>
-      </div>
-      <br />
+</div>
 
-      <br />
-      <Header title="Scaled Agile 5.0" />
-      <div className="row">
-        <div className="row">
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-        </div>
-      </div>
 
-      <br />
-
-      <br />
-      <Header title="Scrum.org" />
-      <div className="row">
-        <div className="row">
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <Header title="Scrum Alliance" />
-      <div className="row">
-        <div className="row">
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <Header title="PMI" />
-      <div className="row">
-        <div className="row">
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <Header title="Corporate Training" />
-      <div className="row">
-        <div className="row">
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-          <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-        </div>
-      </div>
-
-      <br />
-    </div>
   );
 }
+}
+
+function Safe(){
+	return (
+		<div>
+		<br />
+		<Header title="Safe" /><br />
+		<div className="row">
+		  <div className="row">
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+		  </div>
+		</div>
+  
+		<br />
+		</div>
+  
+  
+	)
+}
+
+function Scaled(){
+	return (
+		<div>
+		<br />
+		<Header title="Scaled Agile 5.0" />
+
+		<br />
+		<div className="row">
+		  <div className="row">
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+		  </div>
+		</div>
+  
+		<br />
+		</div>
+  
+  
+	)
+}
+
+
+function ScrumOrg() {
+	return (
+		<div>
+
+		<br />
+		<Header title="Scrum.org" />
+
+		<br />
+		<div className="row">
+		  <div className="row">
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+			<div className="col">
+			  <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+			</div>
+		  </div>
+		</div>
+		</div> 
+	)
+}
+function ScrumAlliance() {
+	return (
+		<div>
+      <br />
+      <Header title="Scrum Alliance" />
+
+		<br />
+      <div className="row">
+        <div className="row">
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+		<br />
+		</div> </div>
+</div> 
+)
+}
+
+function PMI() {
+	return (
+
+<div>
+      <br />
+      <Header title="PMI" />
+
+		<br />
+      <div className="row">
+        <div className="row">
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+        </div>
+      </div>
+	  <br />
+</div>
+	)
+
+}
+function CorporateTraining() {
+	return (
+		<div> 
+      <br />
+      <Header title="Corporate Training" />
+
+		<br />
+      <div className="row">
+        <div className="row">
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+          <div className="col">
+            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
+          </div>
+        </div>
+      </div>
+	  </div> 
+	)
+}
+
 class TrainingPage extends React.Component {
   render() {
     return (
       <div className="container">
-        <Test />
+        <StaticTrainingPage />
 
         <br />
         <br />

@@ -41,11 +41,17 @@ import PSD from "./pages/courses/ScrumOrg/PSD";
 import PSM from "./pages/courses/ScrumOrg/PSM";
 import PSPO from "./pages/courses/ScrumOrg/PSPO";
 import AboutUsPage from "./pages/AboutUsPage";
+import ReduxFilter from 'pages/ReduxTest/index'
 
 export default class Routes extends React.Component {
   render() {
     return (
       <Switch>
+
+<Route path="/filter">
+          <ReduxFilter />
+        </Route>
+
         <Route path="/aboutus">
           <AboutUsPage />
         </Route>

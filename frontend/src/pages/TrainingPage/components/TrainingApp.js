@@ -57,7 +57,6 @@ export default function TrainingApp() {
         <br />
         <br />
         <TransactionsTable />
-        <h3>Scaled Agile 5.0</h3>
       </div>
     </TransactionsContext.Provider>
   );

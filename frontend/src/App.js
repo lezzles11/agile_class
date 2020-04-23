@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Routes from "./Routes";
 import Header from "./components/Header";
-import Test from "./pages/TrainingPage/Test";
 
 function Notes() {
   return (

@@ -5,12 +5,15 @@ import Image from './Image'
 export default class PMI extends Component {
 	render() {
 		return (
+			<div>
 			<div className="row" >
 		<br />
 		<br />
 		<Header title="PMI" />
 		<br /><br />
+		</div>
 		<div className="row">
+
 		<div className="col">
 		  	<Link to="/pmp" >
             <Image src="https://images.youracclaim.com/images/260e36dc-d100-45c3-852f-9d8063fa71e6/pmp-600px.png " />
@@ -22,13 +25,13 @@ export default class PMI extends Component {
 			</Link>
           </div>
           <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
+		  </div>
+
           <div className="col">
-            <Image src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-          </div>
-		
-		</div> 
+		  </div>
+		 
+			</div>
+			<br />
 			</div>
 		)
 	}

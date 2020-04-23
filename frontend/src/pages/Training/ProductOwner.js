@@ -5,11 +5,13 @@ import Image from './Image'
 export default class ProductOwner extends Component {
 	render() {
 		return (
+			<div>
 			<div className="row" >
 			<br />
 			<br />
 			<Header title="Product Owner" />
 			<br /><br />
+			</div>
 			<div className="row">
 			<div className="col">
 			<Link to="/cspo" >
@@ -17,9 +19,7 @@ export default class ProductOwner extends Component {
 			</Link>
 			</div>
 			<div className="col">
-			<Link to="/advancedscrummaster" >
-			  <Image src="https://www.dropbox.com/s/13ldvrpmpofm8rz/SASM.png?raw=1" />
-			  </Link>
+				
 			</div>
 			<div className="col">
 				

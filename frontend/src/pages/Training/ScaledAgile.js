@@ -5,11 +5,13 @@ import Image from './Image'
 export default class ScaledAgile extends Component {
 	render() {
 		return (
+			<div>
 			<div className="row" >
 			<br />
 			<br />
 			<Header title="Scaled Agile" />
 			<br /><br />
+			</div>
 			<div className="row">
 			<div className="col">
 			<Link to="/agilist" >
@@ -58,6 +60,7 @@ export default class ScaledAgile extends Component {
 		</div>
 		
 		</div> 
+		<br />	<br />
 		<div className="row">
 			<div className="col">
 			<Link to="/productmanager" >
@@ -81,6 +84,8 @@ export default class ScaledAgile extends Component {
 			</div>
 			
 			</div> 
+
+			<br /><br />
 			<div className="row">
 			<div className="col">
 			<Link to="/softwareengineer" >
@@ -102,7 +107,7 @@ export default class ScaledAgile extends Component {
 			</div>
 			
 			</div> 
-
+<br />
 				</div>
 		)
 	}

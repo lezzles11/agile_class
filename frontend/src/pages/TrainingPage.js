@@ -67,9 +67,9 @@ class TrainingPage extends React.Component {
 		let bodylabel = "Certifying Body"
 		let typedown = "Role";
   return (
-    <div>
+    <div className="container">
       <div className="row">
-        <div className="col">
+        <div className="col-4">
 		<InputLabel htmlFor="roledropdown">{rolelabel}</InputLabel>
 		<Select
 		id="roledropdown"
@@ -82,12 +82,10 @@ class TrainingPage extends React.Component {
           <MenuItem value="org">Scrum.org</MenuItem>
 		  <MenuItem value="pmi">PMI</MenuItem>
 		  <MenuItem value="corporate">Corporate Training</MenuItem>
-
-        
         </Select>
 
         </div>
-        <div className="col">
+        <div className="col-4">
 		<InputLabel htmlFor="certifyingdropdown">{bodylabel}</InputLabel>
 		<Select
 
@@ -101,7 +99,7 @@ class TrainingPage extends React.Component {
 		  <MenuItem value="PMI">PMI</MenuItem>
         </Select>
         </div>
-        <div className="col">
+        <div className="col-4">
 		<InputLabel htmlFor="typedropdown">{typedown}</InputLabel>
 		<Select
           labelId="typedropdown"
@@ -122,14 +120,22 @@ class TrainingPage extends React.Component {
       </div>
       <br />
 	  {(type === "" && body === "" && role === "") &&(<div><AllComponents /></div>)}
-	{type === "scaled" && <ScaledAgile />}
-	{type === "org" && <ScrumOrg />}
-	{(type === "alliance" || body === "alliance") && <ScrumAlliance />}
+	
+	  {type === "scaled" && <ScaledAgile />}
 
-	{body === "safe" && <Safe />}
-	{body === "PMI" && <PMI />}
-	{role === "leadership" && <Leadership />}
-	{role === "corporate" && <CorporateTraining />}
+{type === "leadership" && <Leadership />}
+{type === "corporate" && <CorporateTraining />}
+
+	{body === "safe" && <Safe /> }
+
+{(body === "org" || type === "org" )&& <ScrumOrg />}
+{(body === "alliance" || type === "alliance" )&& <ScrumAlliance />}
+{(body === "PMI" || type === "PMI" )&& <PMI />}
+	{role === "ba" && <BusinessAnalyst />}
+          {role === "sm" && <ScrumMaster />}
+          {role === "po" && <ProductOwner />}
+          {role === "dev" && <Developer />}
+          {role === "qa" && <QualityAssurance />}
 
       <br />
 </div>

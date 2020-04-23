@@ -10,7 +10,7 @@ export default class CorporateTraining extends Component {
 		<br />
 		<Header title="Corporate Training" />
 		<br /><br />
-		<div className="row"> <div className="col">
+		<div className="row"> <br /><div className="col">
 		  	<Link to="/valuestreamworkshop" >
             <Image src="https://www.dropbox.com/s/pd7vj63levx83q9/Screen%20Shot%202020-03-15%20at%207.41.35%20PM.png?raw=1" />
 			</Link>

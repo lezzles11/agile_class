@@ -6,11 +6,13 @@ import Image from './Image'
 export default class ScrumOrg extends Component {
 	render() {
 		return (
+			<div>
 			<div className="row" >
 			<br />
 			<br />
 			<Header title="Scrum.Org" />
 			<br /><br />
+			</div>
 			<div className="row">
 			<div className="col">
 			  <Link to="/psm" >

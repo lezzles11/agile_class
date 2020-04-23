@@ -5,11 +5,13 @@ import Image from './Image'
 export default class ScrumAlliance extends Component {
 	render() {
 		return (
+			<div>
 			<div className="row" >
 			<br />
 			<br />
 			<Header title="Scrum Alliance" />
 			<br /><br />
+			</div>
 			<div className="row">
 			<div className="col">
 			<Link to="/advancedscrummaster" >
@@ -31,6 +33,7 @@ export default class ScrumAlliance extends Component {
 			</div>
 			
 			</div> 
+			<br />
 				</div>
 		)
 	}

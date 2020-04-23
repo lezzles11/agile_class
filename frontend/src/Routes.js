@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
 import AssessmentPage from "./pages/AssessmentPage";
-import TrainingPage from "./pages/TrainingPage/TrainingPage";
+import TrainingPage from "./pages/TrainingPage";
 import RegisterPage from "./pages/RegisterPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import CoachingPage from "./pages/CoachingPage";

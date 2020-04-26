@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutUsPage() {
+function TermsAndConditions() {
   return (
     <div className="container">
       <div className="row">
@@ -150,4 +150,4 @@ function AboutUsPage() {
     </div>
   );
 }
-export default AboutUsPage;
+export default TermsAndConditions;

@@ -57,7 +57,7 @@ function TrainingDropdown() {
         </MDBDropdownItem>
         <MDBDropdownItem>
           {" "}
-          <Link className="text-dark nav-link" to="/upcomingcourses">
+          <Link className="text-dark nav-link" to="/upcoming">
             Upcoming Courses
           </Link>
         </MDBDropdownItem>

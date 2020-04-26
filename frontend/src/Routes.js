@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-
+import TermsAndConditions from './pages/TermsAndConditions'
 import Homepage from "./pages/Homepage";
 import AssessmentPage from "./pages/AssessmentPage";
 import TrainingPage from "./pages/TrainingPage";

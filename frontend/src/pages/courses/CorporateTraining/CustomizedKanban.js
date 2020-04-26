@@ -5,6 +5,7 @@ class CustomizedKanban extends Component {
     return (
       <div>
         <Template 
+		effort="10"
         logoimage="https://www.dropbox.com/s/ol4ow6tafftc0qm/Image%203.png?raw=1" 
         title="Customized Kanban" 
         about="A workshop designed to help teams be equipped to use Scrum and Kanban principles in their working environments. " 

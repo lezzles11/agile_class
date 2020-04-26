@@ -146,15 +146,17 @@ class TrainingPage extends React.Component {
 function AllComponents() {
 	return (
 		<div>
+
+<Leadership />
+
+<ScaledAgile />
 			<BusinessAnalyst />
 			<CorporateTraining />
 			<Developer />
-			<Leadership />
 			<PMI />
 			<ProductOwner />
 			<QualityAssurance />
 			<Safe />
-			<ScaledAgile />
 			<ScrumAlliance />
 			<ScrumMaster />
 			<ScrumOrg />

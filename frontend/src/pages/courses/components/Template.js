@@ -9,6 +9,7 @@ import {
 function Template({
   logoimage,
   title,
+  effort,
   about,
   learn,
   point1,
@@ -49,7 +50,7 @@ function Template({
         <div className="col">
           <SecondColumn
             length="2 days"
-            effort=""
+            effort={effort}
             price="$3000"
             col2title1=""
             col2text1='"Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization."'

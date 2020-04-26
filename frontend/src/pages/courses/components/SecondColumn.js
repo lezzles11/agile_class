@@ -39,7 +39,7 @@ function SecondColumn({
   return (
     <div>
       Length: {length} <br />
-      Effort: {effort} hours / week
+      Effort: 5 hours / week
       <br />
       Price: {price}
       <br />

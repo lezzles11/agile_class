@@ -46,7 +46,7 @@ const Footer = () => {
                 <a href="/contactus">Become A Trainer</a>
               </li>
               <li className="list-unstyled">
-                <a href="/aboutus">Terms and Conditions</a>
+                <a href="/termsandconditions">Terms and Conditions</a>
               </li>
             </ul>
           </MDBCol>

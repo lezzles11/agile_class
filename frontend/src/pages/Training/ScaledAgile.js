@@ -49,8 +49,8 @@ export default class ScaledAgile extends Component {
 			  </Link>
 		</div>
 		<div className="col">
-		<Link to="/leanportfoliomanager" >
-			  <Image src="https://www.youracclaim.com/org/scaled-agile/badge/certified-safe-5-lean-portfolio-manager" />
+		<Link to="/safeforteams" >
+			  <Image src="https://www.dropbox.com/s/brlg8wt82kc94fq/SAFE_For_Teams_Logo.png?raw=1" />
 			  </Link>
 		</div>
 		<div className="col">
@@ -98,9 +98,7 @@ export default class ScaledAgile extends Component {
 			  </Link>
 			</div>
 			<div className="col">
-			<Link to="/safeforteams" >
-			  <Image src="https://www.dropbox.com/s/brlg8wt82kc94fq/SAFE_For_Teams_Logo.png?raw=1" />
-			  </Link>
+		
 			</div>
 			<div className="col">
 				

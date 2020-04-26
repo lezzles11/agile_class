@@ -23,13 +23,7 @@ function Login() {
             <p>
               <Link to="/register">Forgot Password? </Link>
             </p>
-            <MDBBtn
-              className="btn"
-              type="button"
-              className="btn-block z-depth-2"
-            >
-              Submit
-            </MDBBtn>
+			<MDBBtn color="blue">Login</MDBBtn>
           </MDBCardBody>
         </form>
       </div>

@@ -38,16 +38,18 @@ const Footer = () => {
             <h5 className="title">Related Links:</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="/aboutus">About Us</a>
+				<Link to="/aboutus">About Us</Link>
               </li>
 
               <Link to="/contactus">Contact Us</Link>
               <li className="list-unstyled">
-                <a href="/contactus">Become A Trainer</a>
+			  <Link to="/contactus" >Become A Trainer
+			  </Link>
               </li>
               <li className="list-unstyled">
-                <a href="/termsandconditions">Terms and Conditions</a>
-              </li>
+			  <Link to="/termsandconditions" >Terms and Conditions
+			</Link> 
+			  </li>
             </ul>
           </MDBCol>
           <MDBCol md="4">

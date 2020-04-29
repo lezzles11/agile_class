@@ -158,6 +158,9 @@ function RoundedButton({ to, text }) {
 	  </MDBBtn>
 	);
   }
+
+
+  
 function SocialMedia() {
   return (
     <div className="col">
@@ -203,17 +206,19 @@ function SocialMedia() {
         </div>
 
         <div className="col">
+
+		<a target="_blank" href="www.twitter.com">
           <li className="nav-item">
             <NavItem>
-              <a href="www.twitter.com">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   style={{ color: "#49A1EB" }}
                   size="2x"
                 />
-              </a>
             </NavItem>
           </li>
+
+		  </a>
         </div>
       </div>
     </div>

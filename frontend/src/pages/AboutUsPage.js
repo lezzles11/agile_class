@@ -72,13 +72,14 @@ function AboutUsPage() {
         <div className="col">
           <Image name="Kirstin Tatagiri" title="Scrum Master" src={Kirstin} />
         </div>
+		<div className="col">
+          <Image name="Lesley Cheung" title="Tech Lead" src={Lesley} />
+        </div>
         <div className="col">
           <Image name="Sneha Dighe" title="Developer" src={Sneha} />
         </div>
-        <div className="col">
-          <Image name="Lesley Cheung" title="Developer" src={Lesley} />
-        </div>
-      </div>
+       
+      </div><br />
       <div className="row">
         <br />
         <div className="col">
